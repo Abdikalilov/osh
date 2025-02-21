@@ -1,8 +1,10 @@
-
+import { CardNews, CardAfisha, CardBook } from "../../features/index"
+import "./homePage.scss"
 export const HomePage = () => {
-    return (
-        <div>
-           <h1>Home</h1> 
-        </div>
-    );
+  return (
+    <div className=" container">
+      
+    home
+    </div>
+  )
 }

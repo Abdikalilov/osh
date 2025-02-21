@@ -1,0 +1,5 @@
+export { CardNews } from "./cardNews/CardNews"
+export { CardAfisha } from "./cardAfisha/CardAfisha"
+export { CardPartners } from "./cardPartners/CardPartners"
+export { CardBook } from "./cardBook/CardBook"
+export { Navigations } from "./navigations/Navigations"
