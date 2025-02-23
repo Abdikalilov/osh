@@ -1,0 +1,81 @@
+.home-rating-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-rating-title {
+  margin-top: 70px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #003c3c;
+}
+
+.home-rating-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.home-rating-card {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 10px;
+  // text-align: center;
+  padding: 10px;
+  flex: 1;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    
+  }
+
+  &.large {
+    flex: 1.5;
+    max-width: 600px;
+  }
+}
+
+.home-rating-image {
+  border: 12px solid #005f5f;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: border-color 0.3s ease;
+
+  .home-rating-card:hover & {
+    border-color: #007777;
+  }
+}
+
+.home-rating-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #003c3c;
+  text-align: left;
+}
+
+.home-rating-books,
+.home-rating-title-text,
+.home-rating-author,
+.home-rating-votes {
+text-align: right;
+  font-size: 16px;
+  color: #333;
+  margin-top: 35px;
+}
+
+.home-rating-votes {
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px; 
+}

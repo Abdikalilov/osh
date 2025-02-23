@@ -1,0 +1,125 @@
+.home-catalogs {
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 24px;
+
+    &__title {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 24px;
+        text-align: left;
+        color: #005f5f;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        width: 850px;
+        height: 560px;
+        background: #005f5f;
+        color: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 12px);
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    &__content {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    &__card-title {
+        font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    &__card-title2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        font-size: 16px;
+      line-height: 1.5;
+    }
+
+    &__description2 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    &__button {
+        background: white;
+        color: #005f5f;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        align-self: flex-end; 
+
+        &:hover {
+            background: #e0f2f1;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        padding: 16px;
+
+        &__cards {
+            gap: 16px;
+        }
+
+        &__card {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__title {
+            font-size: 28px;
+            text-align: center;
+        }
+
+        &__card-title {
+            font-size: 18px;
+        }
+
+        &__description {
+            font-size: 14px;
+        }
+
+        &__button {
+            padding: 6px 12px;
+        }
+    }
+}
