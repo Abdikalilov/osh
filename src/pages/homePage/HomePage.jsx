@@ -1,5 +1,5 @@
-import { HomeBanner, HomeCatalogs,  HomeNews,  HomeRating, HomeViews } from "../../widgets";
-import { CardAfisha,CardPartners} from "../../features/index"
+import { HomeBanner,   HomeNews,  HomeRating, HomeViews } from "../../widgets";
+import { CardAfisha,CardPartners,CardFhdt} from "../../features/index"
 
 export const HomePage = () => {
   return (
@@ -7,7 +7,7 @@ export const HomePage = () => {
       <h1>Home</h1>
       <HomeBanner />    {/*адаптив не готов */}
       <CardAfisha />  {/* готов*/}
-      <HomeCatalogs />  {/*готов */}
+      <CardFhdt/>
       <HomeNews />  {/*  не готов */}
       <HomeViews /> {/*готов */}
       <CardPartners /> {/* готов */}
