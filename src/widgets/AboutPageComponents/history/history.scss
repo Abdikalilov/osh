@@ -1,0 +1,28 @@
+.history-container{
+    max-width: 1340px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 200px;
+
+
+    &-title{
+        color: #105B60;
+    }
+    &-img{
+        width: 97%;
+        margin-top: 30px;
+    }
+    &-text{
+        margin-top: 30px;
+        width: 95%;
+            &-description{
+                font-size: 22px;
+                color: #5A5C62CC;
+            }
+            &-title{
+                font-size: 22px;
+                font-weight: bold;
+                color: #105B60;
+            }
+    }
+}

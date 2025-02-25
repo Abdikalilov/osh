@@ -1,0 +1,28 @@
+.management-container{
+    max-width: 1340px;
+    width: 95%;
+    color: #105B60;
+    margin: 0 auto;
+    margin-top: 200px;
+
+
+    &-cards{
+        display: flex;
+        gap: 40px;
+        margin-top: 2%;
+
+        &-card{
+            width: 22%;
+            &-img{
+                width: 110%;
+            }
+        }
+        h3{
+            margin-top: 10px;
+        }
+        p{
+            margin-top: 10px;
+            width: 120%;
+        }
+    }
+}
