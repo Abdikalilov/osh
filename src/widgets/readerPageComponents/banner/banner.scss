@@ -1,0 +1,117 @@
+.banner{
+ 
+
+    &-cont{
+    width: 1207px; 
+    height: 695px;
+    margin-top: 250px;
+    background-color: #105B60;
+    border-radius: 49px;
+    }
+    &-img{
+        margin-left: 750px;
+        margin-top: -427px;
+        width: 570px;
+        height: 695px;
+        
+    }
+    &-text1{
+        font-size: 71px;
+        font-weight: 400;
+        line-height: 71px;
+        letter-spacing: 0%;
+        color: #FFFFFF;
+        padding-top: 130px;
+        padding-left: 60px;
+        width: 754px;
+    }
+    &-text2{
+        color: #EAEBEC;
+        width: 656px;
+        height: 84px;
+        margin-left: 60px;
+        padding-top: 50px;
+    }
+    &-btn{
+        width: 186px;
+        height:  55px;
+        border-radius: 50px;
+        background-color: #FFFFFF;
+        color: #105B60;
+        border: none;
+        margin-left: 60px;
+        margin-top: 100px;
+        position: absolute;
+    }
+
+}
+
+
+// @media screen and (max-width: 1320px) {
+//     .banner{
+//         // max-width: 1140px; 
+//     }
+// }
+
+@media screen and (max-width: 1200px) {
+    .banner{
+        max-width: 960px;
+        .banner-cont{
+            height: 453px;
+            width: 830px;
+            border-radius: 30px;
+
+
+        }
+        .banner-img{
+            width: 430px;
+            height: 453px;  
+            margin-top: 0px;
+            margin-left: 550px;
+        }
+
+        .banner-text1{
+            font-size: 52px;
+            width: 600px;
+            height: 99px;
+            position: absolute;
+            margin-top: -100px;
+            margin-left: -18px;
+        }
+        .banner-text2{
+            // font-size: 12.5px;
+            width: 511px;
+            height: 32px;
+            margin-top: 212px;
+            position: absolute;
+            margin-left: 42px;
+
+            // padding: 0;
+        }
+        .banner-btn{
+            width: 99px;
+            height: 30px;
+            margin-top: 380px;
+            margin-left: 42px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .banner{
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner{
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banner{
+        max-width: 100%;
+    }
+}
+
