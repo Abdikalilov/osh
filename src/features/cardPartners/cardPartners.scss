@@ -1,29 +1,28 @@
 .card-partners {
-    max-width: 1320px;
-    margin: 0 auto;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 70px;
+
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #105B60;
+  }
+
+  .partners-card {
     padding: 20px;
-    text-align: center;
-    margin-top: 70px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.card-partners__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
   
-    h2 {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      text-align: left;
-      color: #105B60;
-    }
-  
-    .partners-card {
-      padding: 20px;
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .news-image {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
 }
