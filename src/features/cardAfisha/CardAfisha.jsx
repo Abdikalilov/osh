@@ -1,6 +1,7 @@
 import React from "react";
 import "./CardAfisha.scss";
-
+import { Link } from 'react-router-dom'
+ 
 const events = [
   {
     title: "ВЫСТАВКА: КОД ЦИВИЛИЗАЦИЙ",
@@ -49,7 +50,7 @@ export function CardAfisha() {
               <h2 className="card-afisha__card-title">{event.title}</h2>
               <p className="card-afisha__description">{event.description}</p>
             </div>
-            <button className="card-afisha__button">Подробнее</button>
+          <button className="card-afisha__button">  <Link to={'/afisha-detail/id'}>Подробнее</Link></button>
           </div>
         ))}
       </div>
