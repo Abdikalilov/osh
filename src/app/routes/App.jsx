@@ -30,20 +30,20 @@ const routesArr = [
   },
   {
     path: '/afisha-detail/:id',
-    element: <AfishaDetail />
-  },
+     element: <AfishaDetail />
+   },
   {
     path: '/services',
     element: <ServicesPage />
   },
   {
     path: '/project',
-    element: <ProjectPage />
+     element: <ProjectPage />
   },
   {
     path: '/project-detail/:id',
     element: <ProjectDetail />
-  },
+   },
   {
     path: '/news',
     element: <NewsPage />

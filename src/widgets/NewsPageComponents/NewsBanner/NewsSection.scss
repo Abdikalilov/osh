@@ -1,0 +1,40 @@
+.news {
+  width: 1320px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+
+  &__title {
+    font-size: 1.8rem;
+    color: #00716f;
+    margin-bottom: 1.5rem;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: #0d5c5a;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 110%;
+      height: auto;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    color: #105B60CC;
+    max-width: 1074px;
+    margin: 0 auto;
+  }
+}

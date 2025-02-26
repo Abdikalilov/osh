@@ -1,6 +1,10 @@
-import "./newsPage.scss"
+import { NewsSection} from "../../widgets";
+
+
 export const NewsPage = () => {
   return (
-    <div>NewsPage</div>
-  )
+    <div>
+      <NewsSection />    {/*адаптив не готов */}
+    </div>
+  );
 }
