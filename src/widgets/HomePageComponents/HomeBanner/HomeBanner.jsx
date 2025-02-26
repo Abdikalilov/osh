@@ -1,10 +1,10 @@
 import React from "react";
 import "./HomeBanner.scss";
-import libraryHomebanner from "../HomeImg/libraryHomebanner.png";
-import libraryHomebanner2 from "../HomeImg/libraryHomebanner2.png";
-import libraryHomebanner3 from "../HomeImg/libraryHomebanner3.png";
-import libraryHomebanner4 from "../HomeImg/libraryHomebanner4.png";
-import libraryHomebanner5 from "../HomeImg/libraryHomebanner5.png";
+import libraryHomebanner from "../../../shared/libraryimg/libraryHomebanner.png";
+import libraryHomebanner2 from "../../../shared/libraryimg/libraryHomebanner2.png";
+import libraryHomebanner3 from "../../../shared/libraryimg/libraryHomebanner3.png";
+import libraryHomebanner4 from "../../../shared/libraryimg/libraryHomebanner4.png";
+import libraryHomebanner5 from "../../../shared/libraryimg/libraryHomebanner5.png";
 
 export function HomeBanner  ()  {
   return (

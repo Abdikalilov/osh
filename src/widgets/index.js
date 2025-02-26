@@ -2,7 +2,6 @@ export { Header } from './header/Header';
 export { Footer } from './footer/Footer';
 export {Breadcrumb} from "./breadcrumb/Breadcrumb"
 export {HomeBanner} from './HomePageComponents/HomeBanner/HomeBanner';
-export {HomeNews} from './HomePageComponents/HomeNews/HomeNews';
 export {HomeRating} from './HomePageComponents/HomeRating/HomeRating';
 export {HomeViews} from './HomePageComponents/HomeViews/HomeViews';
 export {Banner} from "./readerPageComponents/banner/Banner";
@@ -15,3 +14,4 @@ export { Structure } from './AboutPageComponents/structure/Structure'
 export { Activities } from './AboutPageComponents/activities/Activities'
 export { History } from './AboutPageComponents/history/History'
 export { AfishaDetailSection } from "./afishaDetailSections/AfishaDetailSection"
+export {NewsSection} from './NewsPageComponents/NewsBanner/NewsSection';
