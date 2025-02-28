@@ -5,3 +5,4 @@ export {HomeBanner} from './HomePageComponents/HomeBanner/HomeBanner';
 export {HomeRating} from './HomePageComponents/HomeRating/HomeRating';
 export {HomeViews} from './HomePageComponents/HomeViews/HomeViews';
 export {NewsSection} from './NewsPageComponents/NewsBanner/NewsSection';
+export { AfishaEvent } from './HomePageComponents/afishaEvent/AfishaEvent';
