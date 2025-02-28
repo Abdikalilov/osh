@@ -11,3 +11,4 @@ export {Banner} from "./readerPageComponents/banner/Banner";
 export {Catalog} from './readerPageComponents/catalog/Catalog';
 export {Graphik} from './readerPageComponents/graphik/Graphik';
 export {Video} from './readerPageComponents/video/Video';
+export {Rating} from './readerPageComponents/rating/Rating';
