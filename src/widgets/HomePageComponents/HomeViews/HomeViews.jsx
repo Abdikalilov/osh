@@ -8,12 +8,13 @@ export function HomeViews() {
             <h2>ПРЕДЛАГАЕМ К ПРОСМОТРУ</h2>
             <div className="content">
                 <div className="video-wrapper">
-                    <ReactPlayer 
+                    {/* <ReactPlayer 
                         url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
                         controls 
-                        width="100%" 
-                        height="100%"
-                    />
+                    /> */}
+
+                   <iframe 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=8PmZDTPS3KT798PK" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div className="text-block">
                     <h3>ПОДБОРКА ДЛЯ ВАС</h3>

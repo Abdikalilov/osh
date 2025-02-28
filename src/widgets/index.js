@@ -15,3 +15,4 @@ export { Activities } from './AboutPageComponents/activities/Activities'
 export { History } from './AboutPageComponents/history/History'
 export { AfishaDetailSection } from "./afishaDetailSections/AfishaDetailSection"
 export { NewsSection } from './NewsPageComponents/NewsBanner/NewsSection';
+export { AfishaEvent } from './HomePageComponents/afishaEvent/AfishaEvent';
