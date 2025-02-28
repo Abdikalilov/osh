@@ -1,16 +1,16 @@
-.banner-container{
+.banner-container {
     max-width: 1340px;
     width: 95%;
     margin: 0 auto;
     margin-top: 3%;
+    position: relative;
 
-    &-headline{
+    &-headline {
         border-radius: 15px;
         text-align: center;
         color: #FFFFFF;
         background-color: #105B60;
         padding: 90px;
-
         &-parts{
             &-first-title{
                 font-size: 60px;
@@ -28,60 +28,61 @@
             }
         }
     }
-    &-images{
-        margin-top: 3%;
-        &-first-img{
+    &-images {
+        position: relative;
+        width: 100%;
+
+        img{
             position: absolute;
-            margin-left: 10%;
-            margin-top: -28%;
+        }
+
+        &-first-img {
+            top: -360px;
+            left: 100px;
             width: 10%;
         }
-        &-second-img{
-            position: absolute;
-            margin-left: 22%;
-            margin-top: -9%;
+
+        &-second-img {
+            top: -80px;
+            left: 240px;
             width: 12%;
         }
-        &-third-img{
-            position: absolute;
-            margin-left: 78%;
-            margin-top: -22%;
+
+        &-third-img {
             width: 10%;
+            left: 1050px;
+            bottom: 200px;
         }
     }
 }
+
+
 @media screen and (max-width: 1200px) {
     .banner-container-images-first-img{
-        margin-left: 8%;
-        margin-top: -30%;
-    }
-    .banner-container-images-second-img{
-        margin-left: 20%;
-        margin-top: -10%;
+        margin-left: 1%;
     }
     .banner-container-images-third-img{
-        margin-left: 75%;
+        left: 820px;
         margin-top: -24%;
     }
     .banner-container-headline-parts-description{
-        width: 85%;
+        width: 96%;
     }
 }
 @media screen and (max-width: 992px) {
     .banner-container-images-first-img{
-        margin-left: 8%;
-        margin-top: -35%;
+        margin-top: 30px;
     }
     .banner-container-images-second-img{
-        margin-left: 20%;
-        margin-top: -10%;
+        margin-left: -50px;
+        margin-top: 5px;
     }
     .banner-container-images-third-img{
-        margin-left: 75%;
-        margin-top: -28%;
+        margin-left: -50px;
+        top: 1%;
     }
     .banner-container-headline-parts-description{
-        width: 93%;
+        width: 86%;
         font-size: 16px;
     }
     .banner-container-headline-parts-first-title{
@@ -95,19 +96,17 @@
     }
 }
 @media screen and (max-width: 768px) {
-    .banner-container{
-        margin: 3.5%;
-    }
+
     .banner-container-images-first-img{
-        margin-left: 8%;
-        margin-top: -38%;
+        margin-top: 80px;
+        margin-left: -30px;
     }
     .banner-container-images-second-img{
-        margin-left: 20%;
-        margin-top: -10%;
+        margin-top: 3%;
     }
     .banner-container-images-third-img{
-        margin-left: 80%;
+        margin-left: -200px;
+        margin-top: -25%;
     }
     .banner-container-headline-parts-description{
         width: 86%;
@@ -125,29 +124,28 @@
 }
 @media screen and (max-width: 576px) {
     .banner-container{
-        width: 126.5%;
+        width: 135%;
         margin: 0;
     }
     .banner-container-images-first-img{
-        margin-left: 10%;
-        margin-top: -220%;
-        width: 28%;
+        width: 26%;
+        margin-top: -120%;
     }
     .banner-container-images-second-img{
-        margin-left: 70%;
-        margin-top: -50%;
-        width: 30%;
+        width: 28%;
+        margin-left: 12%;
+        margin-top: -40%;
     }
     .banner-container-images-third-img{
-        margin-left: 90%;
-        margin-top: -183%;
-        width: 25%;
+        width: 26%;
+        margin-top: -155%;
+        margin-left: -80%;
     }
     .banner-container-headline-parts-description{
-        width: 105%;
+        width: 100%;
         font-size: 22px;
         margin-top: 12%;
-        margin-left: 2.5%;
+        margin-left: 0%;
     }
     .banner-container-headline-parts-first-title{
         font-size: 35px;
@@ -160,6 +158,6 @@
         margin-top: 5%;
     }
     .banner-container-headline{
-        height: 1000px;
+        height: 1100px;
     }
 }
