@@ -1,0 +1,61 @@
+// body {
+//     font-family: 'Kino', sans-serif;
+//   }
+  
+  .electronic_banner {
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+
+      .rectangle_electronic {
+        width: 100%;
+        margin-top: 60px;
+        border-radius: 40px;
+        background-color: #105B60;
+        position: relative;
+
+    
+        .title_katalog {
+            color: #FFFFFF;
+            font-size: 40px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 175px 90px;
+            align-items: center;
+          }
+        
+          .ellipseA {
+            width: 160px;
+            border-radius: 100%;
+            position: absolute;
+            bottom: -80px;
+            left: 27%;
+          }
+        
+          .ellipseB {
+            width: 120px;
+            border-radius: 100%;
+            position: absolute;
+            top: 90px;
+            right: 15%;
+          }
+        
+          .ellipseC {
+            width: 120px;
+            border-radius: 100%;
+            position: absolute;
+            top: 30px;
+            left: 15%;
+          }
+      }
+  }
+  
+ 
+  
+  
+  
+  
+  
+ 
+  

@@ -1,0 +1,41 @@
+.support_value {
+
+    .title_value {
+        margin-top: 180px;
+        color: #105B60;
+        font-size: 30px;
+    }
+
+    .value_container {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .value_img {
+        width: 20%;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .value_block {
+        background-color: #105B60;
+        width: 21.7%;
+        height: 16em;
+        border-radius: 10px;
+    }
+
+    .block_title {
+        color: #fff;
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    .value_container .value_p {
+        color: #fff;
+        margin-left: 20px;
+        width: 250px;
+    }
+}
