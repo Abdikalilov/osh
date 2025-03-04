@@ -17,16 +17,10 @@ export const AboutBanner = () => {
                     учиться и получать новые знания.</p>
                 </div>
             </div>
-            <div className='banner-container-images' >
-                <div>
-                    <img className='banner-container-images-first-img ' src={Ellipse4} alt="" />
-                </div>
-                <div>
-                    <img className='banner-container-images-second-img' src={Ellipse5} alt="" />
-                </div>
-                <div>
-                    <img className='banner-container-images-third-img' src={Ellipse6} alt="" />
-                </div>
+            <div className='banner-container-images'>
+                <img className='banner-container-images-first-img' src={Ellipse4} alt="" />
+                <img className='banner-container-images-second-img' src={Ellipse5} alt="" />
+                <img className='banner-container-images-third-img' src={Ellipse6} alt="" />
             </div>
         </div>
         
