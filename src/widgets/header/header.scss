@@ -1,3 +1,145 @@
-.header{
-    
+.header {
+    &_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_logo {}
+
+        &_inp {
+            border: 1px solid #105B60;
+            display: flex;
+            border-radius: 35px;
+            padding: 5px;
+            width: 300px;
+
+            input {
+                border: none;
+                width: 100%;
+                outline: none;
+            }
+
+            button {
+                border: none;
+                background: transparent;
+            }
+
+
+        }
+
+        &_eye {
+            background: transparent;
+            border: none;
+            margin: 0 64px;
+
+
+            .eye {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .link {
+        text-decoration: none;
+        color: #105B60;
+        font-family: SF Pro Display;
+        font-weight: 500;
+        font-size: 18px;
+        margin: 0px 15px;
+        white-space: nowrap;
+
+    }
+
+    &_bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_social {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &_lag {
+                display: flex;
+                background-color: #105B60;
+                width: 56px;
+                padding: 9px;
+                border-radius: 10px;
+
+                .rus {}
+
+                select {
+                    // display: none;
+                    text-align: none;
+
+                    border: none;
+                    outline: none;
+                    background: #105B60;
+                    color: white;
+                    border-radius: 10px;
+
+                    option {
+                        border: none;
+                        outline: none;
+                        background: #105B60;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &_map {
+                display: flex;
+
+                &_text{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 90px;
+                    
+                    .laug{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #105B60;
+                        width: 60px;
+                        height: 35px;
+                        border-radius: 10px;
+                        color: #fff;
+                        padding: 3px;
+                        &_img{
+                            width: 20px;
+                            height: 20px;
+                        }
+                        .aman{
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+                }
+
+                &_img {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 30px;
+
+                    .locate {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        background-color: #105B60;
+                        color: #fff;
+                        border-radius: 50%;
+                        height: 40px;
+                        padding: 10px;
+                        
+                    }
+                }
+            }
+        }
+    }
 }
+
