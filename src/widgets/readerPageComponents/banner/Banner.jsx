@@ -3,7 +3,7 @@ import img from '../../../shared/images/Rectangle.png'
 
 export const Banner = () => {
     return (
-        <div className="banner">
+        <div className="banner container ">
              <div className='banner-cont'>
 
                
