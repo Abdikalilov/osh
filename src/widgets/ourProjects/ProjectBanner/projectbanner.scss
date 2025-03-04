@@ -1,0 +1,61 @@
+.projectbanner{
+    position: relative;
+    h1{
+        color:#105B60;
+        font-weight: 850px;
+        font-size: 60px;
+        margin-top: 203,25px;
+        margin-left: 60px;
+        max-width: 900px;
+
+    }
+    display: flex;
+    align-items: center;
+    &_group{
+        &_image{
+            width: 100%;
+        display: flex;
+        align-items: center;
+        &_img1{
+            width: 620px;
+            height: 580px;
+            margin-top: 40px;
+            // margin-top: 312px;
+            // margin-left: 60px;
+            border-radius: 37.5px;
+
+        }
+        &_img2{
+            margin-left: -300px;
+            margin-top:65px ;
+            width: 410px;
+            height: 500px;
+            
+
+        }
+        
+    }
+}
+&_img3{
+    width: 650px;
+    height: 668px;
+    margin-top: 40px;
+    // margin-left: 727px;
+    margin-left: -290px;
+}
+h2{
+    position: absolute;
+    color: #105B60;
+    bottom: 20px;
+    right: 420px;
+    // font-weight: 700;
+    
+    font-size: 29px;
+    line-height: 30px;
+    width: 250px;
+
+}
+
+
+
+}
