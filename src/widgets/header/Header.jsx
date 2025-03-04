@@ -46,19 +46,19 @@ export const Header = () => {
         </div >
         <button className='header_top_eye'><FaEyeSlash color='#105B60' className='eye' /></button>
         <nav>
-          <NavLink className='link'>О библиотеке</NavLink>
-          <NavLink className='link'>Поддержать библиотеку</NavLink>
-          <NavLink className='link'>Новости</NavLink>
-          <NavLink className='link'>Услуги</NavLink>
-          <NavLink className='link'>Каталог</NavLink>
+          <NavLink className='link' to={"/about"}>О библиотеке</NavLink>
+          <NavLink className='link' to={"/support"}>Поддержать библиотеку</NavLink>
+          <NavLink className='link'  to={"/news"}>Новости</NavLink>
+          <NavLink className='link' to={"/services"}>Услуги</NavLink>
+          <NavLink className='link' to={"/catalog"}>Каталог</NavLink>
         </nav>
       </div>
       <div className="header_bottom">
         <nav>
-          <NavLink className='link'>Афиша мероприятий</NavLink>
-          <NavLink className='link'>Профессиональная деятельность</NavLink>
-          <NavLink className='link'>Читателям</NavLink>
-          <NavLink className='link'>Проекты</NavLink>
+          <NavLink className='link' to={"/afisha"}>Афиша мероприятий</NavLink>
+          <NavLink className='link' to={"/professional"}>Профессиональная деятельность</NavLink>
+          <NavLink className='link' to={"/reader"}>Читателям</NavLink>
+          <NavLink className='link' to={"/project"}>Проекты</NavLink>
         </nav>
         <div className="header_bottom_social">
           <div className='header_bottom_social_map'>
