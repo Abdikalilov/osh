@@ -5,7 +5,7 @@ export const Breadcrumb = () => {
     const paths = location.pathname.split("/").filter(Boolean);
   
     return (
-        <nav className="breadcrumb">
+        <nav className="breadcrumb container">
         <Link to="/" className="breadcrumb__link">ГЛАВНАЯ СТРАНИЦА</Link>
         {paths.length > 0 && <span className="breadcrumb__separator">{'>'}</span>}
         {paths.map((path, index) => {
