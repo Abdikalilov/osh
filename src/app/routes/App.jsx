@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import '../styles/app.scss';
 import { 
   HomePage,
@@ -84,6 +85,7 @@ const routesArr = [
 
 function App() {
   return (
+   
     <BrowserRouter>
       <Header /> 
       <Breadcrumb />
