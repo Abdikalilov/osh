@@ -16,3 +16,6 @@ export { History } from './AboutPageComponents/history/History'
 export { AfishaDetailSection } from "./afishaDetailSections/AfishaDetailSection"
 export { NewsSection } from './NewsPageComponents/NewsBanner/NewsSection';
 export { AfishaEvent } from './HomePageComponents/afishaEvent/AfishaEvent';
+export {ProjectBanner} from './ourProjects/ProjectBanner/ProjectBanner';
+export {MainProjects} from './ourProjects/MainProject/MainProjects';
+export {AmericanCorner} from './ourProjects/AmericanCorner/AmericanCorner';

@@ -1,0 +1,38 @@
+.main{
+    margin-top:100px;
+    color: #105B60;
+
+}
+.projects{
+
+    &-grup{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+        &-card{
+            img{
+                width: 315px;
+                height: 315px;
+                border-radius: 10px;
+
+            }
+            h4{
+                color: #105B60;
+                font-size: 18px;
+                line-height: 18px;
+                margin: 15px 0 10px 0;
+            }
+            p{
+                color: #105B60;
+                font-weight: 400;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// .projecrts-grup-card img{
+//     width: 315px;
+//     height: 315px;
+// }
