@@ -1,6 +1,13 @@
-import "./supportPage.scss"
+import { SupportBanner, SupportPartners, SupportPayment, SupportValue } from '../../widgets';
+import './supportPage.scss';
+
 export const SupportPage = () => {
   return (
-    <div>SupportPage</div>
+    <main className='container'>
+       <SupportBanner/>
+       <SupportValue/>
+       <SupportPartners/>
+       <SupportPayment/>
+    </main>
   )
 }

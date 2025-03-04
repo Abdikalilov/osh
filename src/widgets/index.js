@@ -19,3 +19,11 @@ export { AfishaEvent } from './HomePageComponents/afishaEvent/AfishaEvent';
 export {ProjectBanner} from './ourProjects/ProjectBanner/ProjectBanner';
 export {MainProjects} from './ourProjects/MainProject/MainProjects';
 export {AmericanCorner} from './ourProjects/AmericanCorner/AmericanCorner';
+
+export { SupportBanner } from './SupportPageComponents/SupportBanner/SupportBanner';
+export { SupportPartners } from './SupportPageComponents/SupportPartners/SupportPartners';
+export { SupportPayment } from './SupportPageComponents/SupportPayment/SupportPayment';
+export { SupportValue } from './SupportPageComponents/SupportValue/SupportValue';
+export { ElectronicBanner } from './ElectronicKatalogComponents/electronicBanner/ElectronicBanner';
+export { ElectronicPartners } from './ElectronicKatalogComponents/electronicPartners/ElectronicPartners';
+export { ElectronicSearch } from './ElectronicKatalogComponents/electronicSearch/ElectronicSearch';
