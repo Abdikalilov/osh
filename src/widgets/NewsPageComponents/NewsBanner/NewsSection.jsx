@@ -1,24 +1,33 @@
-import React from "react";
-import "./NewsSection.scss";
-import librarunewsbanner from "../../../shared/libraryimg/librarunewsbanner.png"
+import './NewsSection.scss'
+import nenoigirl from '../../../shared/img/books.svg'
+import nenoibook from '../../../shared/img/group.svg'
+import laptop from '../../../shared/img/laptop.svg'
 
-export function NewsSection  ()  {
-  return (
-    <section className="news">
-      <h2 className="news__title">НОВОСТИ</h2>
-      <div className="news__content">
-        <div className="news__image">
-          <img src={librarunewsbanner} alt="Книга 'НЕ НОЙ'" />
+
+
+export const NewsSection = () => {
+    return (
+        <div >
+            <div className="servicesBanner">
+                <div className="container">
+                    <h1 className='servicesBanner_title'>
+                        Новости
+                    </h1>
+                    <div className='servicesBanner_group '>
+                        <div className=''>
+                            <img src={laptop} alt="" className='servicesBanner_group_girl' />
+                            <img src={nenoibook} alt="" className='servicesBanner_group_book' />
+                            <img src={nenoigirl} alt="" className='servicesBanner_group_glasses' />
+                        </div>
+                    </div>
+                    <p className='servicesBanner_description'>Библиотека имени Токтогула Сатылганова – это не только книги, но и активная работа по развитию культуры, образования и просвещения.  Мы реализуем различные проекты, направленные на популяризацию чтения, поддержку молодежи,  сохранение исторического наследия и развитие цифровых технологий.</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <p className="news__description">
-        Библиотека имени Токтогула Сатылганова – это не только книги, но и активная
-        работа по развитию культуры, образования и просвещения. Мы реализуем различные
-        проекты, направленные на популяризацию чтения, поддержку молодежи, сохранение
-        исторического наследия и развитие цифровых технологий.
-      </p>
-    </section>
-  );
-};
+    );
+}
+
+
+
 
 
