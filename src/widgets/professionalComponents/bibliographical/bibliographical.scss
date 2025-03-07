@@ -1,0 +1,25 @@
+.content-container {
+  width: 100%;
+
+  .page-title {
+    color: #105B60;
+    padding: 30px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600px;
+    text-transform: lowercase;
+    font-family: Kino;
+  }
+
+  .content-wrapper {
+    display: flex;
+    width: 100%;
+    font-family: Kino;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+}
