@@ -20,7 +20,7 @@
     }
 
     &__card {
-        width: 850px;
+        width: calc(50% - 12px);
         height: 560px;
         background: #005f5f;
         color: white;
@@ -29,12 +29,11 @@
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        width: calc(50% - 12px);
+        transition: all 0.3s ease;
 
         &:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease;
         }
     }
 
@@ -56,13 +55,13 @@
 
     &__card-title {
         font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 15px;
+        font-weight: bold;
+        margin-bottom: 15px;
     }
 
     &__description {
         font-size: 16px;
-      line-height: 1.5;
+        line-height: 1.5;
     }
 
     &__button {
@@ -73,7 +72,7 @@
         border-radius: 20px;
         font-weight: bold;
         cursor: pointer;
-        align-self: flex-end; 
+        align-self: flex-end;
 
         &:hover {
             background: #e0f2f1;

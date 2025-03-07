@@ -109,13 +109,6 @@
     .card-afisha__title {
       font-size: 28px;
       text-align: center;
-      .card-afisha__image {
-        width: 100%;
-        max-width: 250px;
-        height: auto;
-        margin-bottom: 16px;
-      }
-  
     }
 
     .card-afisha__list {
@@ -171,10 +164,4 @@
       padding: 6px 12px;
     }
   }
-}
-
-@media (max-width: 1024px) {
- .card-afisha__card .card-afisha__content .card-afisha__description{
-  font-size: 14px;
- }
 }

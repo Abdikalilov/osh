@@ -1,5 +1,5 @@
 import React from "react";
-import "./NewsSection.scss";
+import "./NewsBanner.scss";
 import librarunewsbanner from "../../../shared/libraryimg/librarunewsbanner.png"
 
 export function NewsSection  ()  {

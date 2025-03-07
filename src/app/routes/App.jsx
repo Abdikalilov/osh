@@ -7,7 +7,7 @@ import {
   ServicesPage,
   ProjectPage,
   ProjectDetail,
-  NewsPage,
+  // NewsPage,
   NewsDetail,
   CatalogPage,
   ReaderPage,
@@ -44,10 +44,10 @@ const routesArr = [
     path: '/project-detail/:id',
     element: <ProjectDetail />
    },
-  {
-    path: '/news',
-    element: <NewsPage />
-  },
+  // {
+  //   path: '/news',
+  //   element: <NewsPage />
+  // },
   {
     path: '/news-detail/:id',
     element: <NewsDetail />
