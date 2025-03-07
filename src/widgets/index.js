@@ -27,3 +27,19 @@ export { SupportValue } from './SupportPageComponents/SupportValue/SupportValue'
 export { ElectronicBanner } from './ElectronicKatalogComponents/electronicBanner/ElectronicBanner';
 export { ElectronicPartners } from './ElectronicKatalogComponents/electronicPartners/ElectronicPartners';
 export { ElectronicSearch } from './ElectronicKatalogComponents/electronicSearch/ElectronicSearch';
+
+export { Bibliographical } from "./professionalComponents/bibliographical/Bibliographical";
+export { ContentBlock } from "./professionalComponents/contentBlock/ContentBlock";
+export { Methodological } from "./professionalComponents/methodological/Methodological";
+export { Multimedia } from "./professionalComponents/multimedia/Multimedia";
+export { SearchPage } from "./professionalComponents/search/SearchPage";
+export { SearchBar } from "./professionalComponents/searchBar/SearchBar";
+export { Sidebar } from "./professionalComponents/sidebar/Sidebar";
+
+
+
+
+
+
+
+
