@@ -15,6 +15,8 @@
 
             &-img{
                 width: 100%;
+                background-color: #105B60;
+                border-radius: 10px;
             }
         }
         h3{
@@ -106,5 +108,10 @@
     }
     .management-container-cards-card-img{
         width: 100%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .management-container-cards{
+        gap: 18px;
     }
 }

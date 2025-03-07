@@ -161,3 +161,16 @@
         height: 1100px;
     }
 }
+@media screen and (max-width: 320px) {
+    .banner-container-images-first-img{
+        margin-top: -700px;
+        margin-left: -80px;
+    }
+    .banner-container-images-second-img{
+        margin-left: -20px;
+    }
+    .banner-container-images-third-img{
+        margin-top: -940px;
+        margin-left: -540px;
+    }
+}
