@@ -1,5 +1,5 @@
 import React from 'react';
-// import './Bibliographical.scss';
+import './bibliographical.scss';
 import { ContentBlock } from '../contentBlock/ContentBlock';
 
 export const Bibliographical = () => {
