@@ -3,8 +3,7 @@ import { CardPartners,CardFhdt,CardNews } from "../../features/index"
 
 export const HomePage = () => {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="container">
       <HomeBanner />    {/*адаптив не готов */}
       <AfishaEvent />
       <CardFhdt/>
