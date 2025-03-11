@@ -1,0 +1,30 @@
+.baner {
+    background-image: url(../../../shared/libraryimg/BanerImg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    width: 100%;
+    min-height: 70vh;
+    font-family: 'Kino', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    h1 {
+        font-size: clamp(18px, 1.5vw, 55px);
+        font-weight: 900;
+        width: 100%;
+        color: #105B60;
+    }
+
+    p {
+        color: #FFFFFF;
+        width: 100%;
+        margin-bottom: 50px;
+        width: 90%;
+        font-size: clamp(14px, 1.5vw, 25px);
+    }
+}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./CardAfisha.scss";
 
 export const CardAfisha = ({ image, title, date, description }) => {
@@ -13,7 +14,7 @@ export const CardAfisha = ({ image, title, date, description }) => {
         <h2 className="card-afisha__card-title">{title}</h2>
         <p className="card-afisha__description">{description}</p>
       </div>
-      <button className="card-afisha__button">Подробнее</button>
+      <button className="card-afisha__button"><Link to={"/afisha-detail/:id"}>Подробнее</Link></button>
     </div>
   );
 }

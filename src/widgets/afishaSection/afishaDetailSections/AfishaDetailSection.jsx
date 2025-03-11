@@ -1,6 +1,5 @@
-import React from 'react'
-import imagee from '../../shared/eventsImg/imagee.png'
-import iconca from '../../shared/eventsImg/iconca.png'
+import imagee from '../../../shared/eventsImg/imagee.png'
+import iconca from '../../../shared/eventsImg/iconca.png'
 import { MdOutlineCalendarMonth } from "react-icons/md";
 import { LuMapPin } from "react-icons/lu";
 

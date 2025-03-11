@@ -13,12 +13,14 @@ export { Management } from './AboutPageComponents/management/Management'
 export { Structure } from './AboutPageComponents/structure/Structure'
 export { Activities } from './AboutPageComponents/activities/Activities'
 export { History } from './AboutPageComponents/history/History'
-export { AfishaDetailSection } from "./afishaDetailSections/AfishaDetailSection"
+export { AfishaDetailSection } from "./afishaSection/afishaDetailSections/AfishaDetailSection"
+export { AfishaBanner } from "./afishaSection/afishaBanner/AfishaBanner"
+export {AfishaEvents} from "./afishaSection/afishaEvents/AfishaEvents"
 export { NewsSection } from './NewsPageComponents/NewsBanner/NewsSection';
 export { AfishaEvent } from './HomePageComponents/afishaEvent/AfishaEvent';
-export {ProjectBanner} from './ourProjects/ProjectBanner/ProjectBanner';
-export {MainProjects} from './ourProjects/MainProject/MainProjects';
-export {AmericanCorner} from './ourProjects/AmericanCorner/AmericanCorner';
+export { ProjectBanner } from './ourProjects/ProjectBanner/ProjectBanner';
+export { MainProjects } from './ourProjects/MainProject/MainProjects';
+export { AmericanCorner } from './ourProjects/AmericanCorner/AmericanCorner';
 
 export { SupportBanner } from './SupportPageComponents/SupportBanner/SupportBanner';
 export { SupportPartners } from './SupportPageComponents/SupportPartners/SupportPartners';
@@ -36,8 +38,8 @@ export { SearchPage } from "./professionalComponents/search/SearchPage";
 export { SearchBar } from "./professionalComponents/searchBar/SearchBar";
 export { Sidebar } from "./professionalComponents/sidebar/Sidebar";
 
-export {CatalogBanner} from './catalogSection/catalogBanner/CatalogBanner';
-export {CatalogInput} from './catalogSection/catalogInput/CatalogInput';
+export { CatalogBanner } from './catalogSection/catalogBanner/CatalogBanner';
+export { CatalogInput } from './catalogSection/catalogInput/CatalogInput';
 
 
 

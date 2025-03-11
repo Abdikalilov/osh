@@ -1,11 +1,10 @@
-import { CardAfisha } from "../../features/cardAfisha/CardAfisha"
-import { AfishaBanner } from "../../widgets/afishaBanner/AfishaBanner"
+import { AfishaEvents ,AfishaBanner } from "../../widgets"
 import "./afishaPage.scss"
 export const AfishaPage = () => {
   return (
     <div>
       <AfishaBanner />
-      <CardAfisha />
+      <AfishaEvents />
 
     </div>
   )
