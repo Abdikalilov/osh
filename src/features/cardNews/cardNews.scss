@@ -77,6 +77,15 @@
         }
     }
 
+    @media (max-width: 1200px) {
+        .news-card{
+            max-width: 100%;
+            .news-image{
+                height: 300px
+            }
+        }
+    }
+
     @media (max-width: 768px) {
         .news-row {
             flex-direction: column;
