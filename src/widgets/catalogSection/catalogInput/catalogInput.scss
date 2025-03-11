@@ -1,0 +1,103 @@
+.catalog-container {
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Контейнер для кнопок и поиска */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;  /* Для адаптива */
+}
+
+/* Кнопки */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    background-color: #008080;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.buttons button:hover {
+    background-color: #006666;
+}
+
+.buttons .active {
+    background-color: #004d4d;
+}
+
+/* Поисковые поля */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #008080;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #005f5f;
+    box-shadow: 0px 0px 5px rgba(0, 128, 128, 0.5);
+}
+
+/* Таблица */
+.catalog-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #004d4d;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.catalog-table th, .catalog-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #007777;
+}
+
+.catalog-table th {
+    background: #006666;
+}
+
+.catalog-table tr:hover {
+    background: #005555;
+    transition: 0.3s;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+}

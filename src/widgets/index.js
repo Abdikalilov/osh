@@ -36,7 +36,8 @@ export { SearchPage } from "./professionalComponents/search/SearchPage";
 export { SearchBar } from "./professionalComponents/searchBar/SearchBar";
 export { Sidebar } from "./professionalComponents/sidebar/Sidebar";
 
-
+export {CatalogBanner} from './catalogSection/catalogBanner/CatalogBanner';
+export {CatalogInput} from './catalogSection/catalogInput/CatalogInput';
 
 
 
