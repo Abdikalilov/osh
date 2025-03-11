@@ -1,7 +1,4 @@
 .activities-container{
-    max-width: 1340px;
-    width: 95%;
-    margin: 0 auto;
     margin-top: 200px;
 
     
@@ -86,11 +83,11 @@
         margin-top: 180px;
     }
     .activities-container-cards{
-        width: 101%;
+        width: 100%;
         flex-wrap: wrap;
     }
     .activities-container-cards-card{
-        width: 48.3%;
+        width: 48.15%;
     }
     .third-descritption{
         margin-top: 17%;
@@ -116,7 +113,34 @@
         margin-top: 100px;
     }
     .activities-container-cards{
-        width: 137%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .activities-container-cards-card{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 320px){
+    .activities-container-cards-card-description{
+        font-size: 17px;
+        margin-top: 5%;
+    }
+    .activities-container-title{
+        font-size: 30px;
+    }
+    .activities-container-cards-card-title{
+        font-size: 22px;
+        margin-top: 5%;
+        width: 80%;
+    }
+    .activities-container-cards-card{
+        padding: 40px;
+    }
+    .activities-container{
+        margin-top: 100px;
+    }
+    .activities-container-cards{
+        width: 100%;
         flex-wrap: wrap;
     }
     .activities-container-cards-card{

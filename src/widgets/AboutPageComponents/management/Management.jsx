@@ -7,7 +7,7 @@ import managementFourthImage from '../../../shared/libraryImages/image (3).png'
 
 export const Management = () => {
     return (
-        <div className='management-container'>
+        <div className='management-container container'>
             <h1 className='management-container-title' >РУКОВОДСТВО</h1>
             <div className='management-container-cards' >
                 <div className='management-container-cards-card' >
