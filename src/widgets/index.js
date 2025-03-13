@@ -16,7 +16,6 @@ export { History } from './AboutPageComponents/history/History'
 export { AfishaDetailSection } from "./afishaSection/afishaDetailSections/AfishaDetailSection"
 export { AfishaBanner } from "./afishaSection/afishaBanner/AfishaBanner"
 export {AfishaEvents} from "./afishaSection/afishaEvents/AfishaEvents"
-export { NewsSection } from './NewsPageComponents/NewsBanner/NewsSection';
 export { AfishaEvent } from './HomePageComponents/afishaEvent/AfishaEvent';
 export { ProjectBanner } from './ourProjects/ProjectBanner/ProjectBanner';
 export { MainProjects } from './ourProjects/MainProject/MainProjects';
@@ -41,3 +40,4 @@ export { Sidebar } from "./professionalComponents/sidebar/Sidebar";
 export { CatalogBanner } from './catalogSection/catalogBanner/CatalogBanner';
 export { CatalogInput } from './catalogSection/catalogInput/CatalogInput';
 export {HomeNews}  from "./HomePageComponents/homeNews/HomeNews"
+export {NewsBanner} from "./NewsPageComponents/NewsBanner/NewsBanner"

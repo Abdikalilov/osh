@@ -1,10 +1,10 @@
-import { NewsSection} from "../../widgets/NewsPageComponents/NewsBanner/NewsSection";
+import { NewsBanner } from "../../widgets";
 
 
 export const NewsPage = () => {
   return (
     <div>
-      <NewsSection />    {/*адаптив готов */}
+      <NewsBanner />    {/*адаптив готов */}
     </div>
   );
 }
