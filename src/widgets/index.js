@@ -40,9 +40,4 @@ export { Sidebar } from "./professionalComponents/sidebar/Sidebar";
 
 export { CatalogBanner } from './catalogSection/catalogBanner/CatalogBanner';
 export { CatalogInput } from './catalogSection/catalogInput/CatalogInput';
-
-
-
-
-
-
+export {HomeNews}  from "./HomePageComponents/homeNews/HomeNews"

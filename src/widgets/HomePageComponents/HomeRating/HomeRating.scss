@@ -1,5 +1,5 @@
 .home-rating-container {
-  max-width: 1320px;
+
   margin: 0 auto;
   padding: 20px;
 }
@@ -28,7 +28,7 @@
   // text-align: center;
   padding: 10px;
   flex: 1;
-  max-width: 400px;
+  max-width: 360px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
@@ -45,8 +45,8 @@
 .home-rating-image {
   border: 12px solid #005f5f;
   border-radius: 8px;
-  width: 100%;
-  height: auto;
+  width: 315px;
+  height: 334px;
   object-fit: cover;
   transition: border-color 0.3s ease;
 

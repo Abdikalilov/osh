@@ -4,7 +4,7 @@ import "./HomeViews.scss";
 
 export function HomeViews() {
     return (
-        <div className="home-views">
+        <div className=" home-views">
             <h2>ПРЕДЛАГАЕМ К ПРОСМОТРУ</h2>
             <div className="content">
                 <div className="video-wrapper">

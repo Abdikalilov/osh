@@ -1,7 +1,7 @@
-.card-news {
+.card-news__card {
     padding: 20px;
-    max-width: 1320px;
-    margin: 0 auto;
+    box-sizing: border-box;
+    
     margin-top: 70px;
 
     h2 {
@@ -87,13 +87,28 @@
     }
 
     @media (max-width: 768px) {
-        .news-row {
+        &__list {
             flex-direction: column;
             align-items: center;
         }
 
-        .news-card {
+        &__card {
             max-width: 100%;
         }
     }
-} 
+} .card-news__button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 8px 16px;
+        background: #005f5f;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background: #004b8e;
+        }
+    }

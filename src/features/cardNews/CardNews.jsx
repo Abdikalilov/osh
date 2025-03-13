@@ -121,6 +121,7 @@ export function CardNews() {
           ))
         )}
       </div>
+      <button className="card-news__button">Подробнее</button>
     </div>
   );
 }

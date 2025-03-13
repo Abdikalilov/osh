@@ -1,11 +1,11 @@
-import './NewsSection.scss'
+import './newsSection.scss'
 import nenoigirl from '../../../shared/img/books.svg'
 import nenoibook from '../../../shared/img/group.svg'
 import laptop from '../../../shared/img/laptop.svg'
 
 
 
-export const NewsSection = () => {
+export const NewsBanner = () => {
     return (
         <div >
             <div className="servicesBanner">
