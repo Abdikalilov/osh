@@ -1,8 +1,5 @@
 .management-container{
-    max-width: 1340px;
-    width: 95%;
     color: #105B60;
-    margin: 0 auto;
     margin-top: 200px;
 
     &-cards{
@@ -43,9 +40,9 @@
         margin-top: 200px;
     }
     .management-container-cards{
-        gap: 55px;
         width: 100%;
         flex-wrap: wrap;
+        gap: 28px;
     }
     .management-title{
         font-size: 30px;
@@ -54,7 +51,7 @@
         font-size: 24px;
     }
     .management-container-cards-card{
-        width: 47%;
+        width: 48%;
     }
     .management-container-cards-card-img{
         width: 100%;
@@ -65,7 +62,7 @@
         margin-top: 150px;
     }
     .management-container-cards{
-        gap: 55px;
+        gap: 30px;
         width: 100%;
         flex-wrap: wrap;
     }
@@ -73,16 +70,16 @@
         font-size: 30px;
     }
     .management-container-cards-card{
-        width: 43.5%;
+        width: 47%;
     }
     .management-container-cards-card-img{
-        width: 114%;
+        width: 100%;
     }
     .management-title{
-        font-size: 26px;
+        font-size: 22px;
     }
     .management-description{
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 576px) {
@@ -90,8 +87,8 @@
         margin-top: 100px;
     }
     .management-container-cards{
-        gap: 25px;
-        width: 139%;
+        gap: 20px;
+        width: 100%;
         flex-wrap: wrap;
     }
     .management-container-title{
@@ -104,14 +101,59 @@
         font-size: 15px;
     }
     .management-container-cards-card{
-        width: 47%;
+        width: 47.5%;
     }
     .management-container-cards-card-img{
         width: 100%;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
+    .management-container{
+        margin-top: 80px;
+    }
     .management-container-cards{
-        gap: 18px;
+        gap: 40px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .management-container-title{
+        font-size: 30px;
+    }
+    .management-title{
+        font-size: 16px;
+    }
+    .management-description{
+        font-size: 11px;
+    }
+    .management-container-cards-card{
+        width: 40%;
+    }
+    .management-container-cards-card-img{
+        width: 120%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .management-container{
+        margin-top: 80px;
+    }
+    .management-container-cards{
+        gap: 33px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .management-container-title{
+        font-size: 30px;
+    }
+    .management-title{
+        font-size: 11px;
+    }
+    .management-description{
+        font-size: 7px;
+    }
+    .management-container-cards-card{
+        width: 40%;
+    }
+    .management-container-cards-card-img{
+        width: 123%;
     }
 }

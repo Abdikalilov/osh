@@ -27,7 +27,7 @@ export const Activities = () => {
         }
     ]
     return (
-        <div className='activities-container' >
+        <div className='activities-container container' >
             <h1 className='activities-container-title' >АКТЫ, РЕГУЛИРУЮЩИЕ ДЕЯТЕЛЬНОСТЬ</h1>
             <div className='activities-container-cards' >
             {

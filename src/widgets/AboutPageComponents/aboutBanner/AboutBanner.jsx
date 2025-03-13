@@ -6,7 +6,7 @@ import Ellipse5 from '../../../shared/libraryImages/Ellipse 5.png'
 
 export const AboutBanner = () => {
     return (
-        <div className='banner-container'>
+        <div className='banner-container container'>
             <div className='banner-container-headline'>
                 <div className='banner-container-headline-parts'>
                     <h1 className='banner-container-headline-parts-first-title'>История, которая </h1>
