@@ -3,6 +3,9 @@ import "./breadcrumb.scss"
 
 export const Breadcrumb = ({ routes }) => {
   const location = useLocation();
+
+  if (location.pathname === '/') return null;
+
   const paths = location.pathname.split("/").filter(Boolean);
 
   return (
