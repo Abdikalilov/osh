@@ -5,7 +5,7 @@ import img2 from '../../../shared/images/Rectangle2.png'
 
 export const Catalog = () => {
     return (
-        <div className='catalog'>
+        <div className='catalog container'>
              <h1 className='catalog-text1'>Каталоги</h1>
              <h1 className='catalog-text2'>Электронная библиотека</h1>
 

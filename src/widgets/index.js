@@ -41,3 +41,6 @@ export { CatalogBanner } from './catalogSection/catalogBanner/CatalogBanner';
 export { CatalogInput } from './catalogSection/catalogInput/CatalogInput';
 export {HomeNews}  from "./HomePageComponents/homeNews/HomeNews"
 export {NewsBanner} from "./NewsPageComponents/NewsBanner/NewsBanner"
+
+
+export {Rating} from './readerPageComponents/rating/Rating';

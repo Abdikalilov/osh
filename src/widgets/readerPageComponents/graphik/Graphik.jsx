@@ -23,7 +23,7 @@ export const Graphik = () => {
 
 
   return (
-    <div className='grap'>
+    <div className='grap container'>
       <h2 className='grap-graphik' >График работы</h2>
       <table className='grap-table1'border="1" width="100%" >
         <thead>
