@@ -1,20 +1,16 @@
-.catalog-container {
-    width: 80%;
-    margin: 20px auto;
-    font-family: Arial, sans-serif;
-}
 
-/* Контейнер для кнопок и поиска */
+
+
 .controls {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
-    flex-wrap: wrap;  /* Для адаптива */
+    flex-wrap: wrap;  
 }
 
-/* Кнопки */
+
 .buttons {
     display: flex;
     gap: 10px;
@@ -39,12 +35,8 @@
     background-color: #004d4d;
 }
 
-/* Поисковые поля */
-.search-bar {
-    display: flex;
-    gap: 10px;
-    flex-grow: 1;
-}
+
+
 
 .search-bar input {
     flex: 1;
@@ -61,7 +53,6 @@
     box-shadow: 0px 0px 5px rgba(0, 128, 128, 0.5);
 }
 
-/* Таблица */
 .catalog-table {
     width: 100%;
     border-collapse: collapse;
@@ -86,18 +77,72 @@
     transition: 0.3s;
 }
 
-/* Адаптив */
+
+.search-bar {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.search-bar.open {
+    max-height: 100px; 
+}
+
+
+
 @media (max-width: 768px) {
-    .controls {
-        flex-direction: column;
-        align-items: stretch;
+    .search-bar-large {
+        display: none;
     }
 
     .search-bar {
+        display: none;
         flex-direction: column;
+        gap: 10px;
+        padding: 10px;
     }
 
-    .buttons {
-        justify-content: center;
+    .search-bar.open {
+        display: flex;
     }
+
+    .burger-menu {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .kot{
+        display: none;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .search-bar-large {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .search-bar-large input {
+        width: 200px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+}
+
+
+.kot{
+    display: flex;
 }
