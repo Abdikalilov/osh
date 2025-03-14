@@ -54,6 +54,8 @@ export const Header = () => {
 
   return (
     <div className='header container'>
+            {active && <VisuallyImpaired mainTextSpeech={mainTextSpeech} />}
+
       <div className='header_top'>
         <img src={Group} alt="logo" className='header_top_logo' />
         <div className='header_top_inp'>
@@ -112,7 +114,6 @@ export const Header = () => {
         </div>
       </div>
 
-      {active && <VisuallyImpaired mainTextSpeech={mainTextSpeech} />}
     </div>
   );
 };

@@ -27,11 +27,11 @@ export const Breadcrumb = ({ routes }) => {
           );
         });
 
-        const title = route?.title || path;
+        if (!route?.title) return null;
 
         return (
           <span key={href} className={isLast ? "breadcrumb__active" : "breadcrumb__link"}>
-            {isLast ? title.toUpperCase() : <Link to={href}>{title.toUpperCase()}</Link>}
+            {isLast ? route.title : <Link to={href}>{route.title}</Link>}
           </span>
         );
       })}
