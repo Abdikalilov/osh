@@ -2,16 +2,16 @@
     background-image: url(../../../shared/libraryimg/BanerImg.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
+    background-size: 100% 100%;
+    margin: 0 auto;
     width: 100%;
-    min-height: 70vh;
+    height: 70vh;
+    padding: 20px;
     font-family: 'Kino', sans-serif;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 10px;
 
     h1 {
         font-size: clamp(18px, 1.5vw, 55px);
@@ -26,5 +26,19 @@
         margin-bottom: 50px;
         width: 90%;
         font-size: clamp(14px, 1.5vw, 25px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .baner {
+        height: 100vh;
+        background-size: cover;
+        background-position: center end;
+        padding: 10px;
+        justify-content: flex-end;
+        h1{
+            color: #FFFFFF;
+            margin-bottom: 50px;
+        }
     }
 }
