@@ -7,8 +7,8 @@ export const ElectronicBanner = () => {
     return (
         <div>
             <div className="electronic_banner">
-                <div className="rectangle_electronic">
-                    <h1 className="title_katalog">ЭЛЕКТРОННЫЙ КАТАЛОГ <br /> БИБЛИОТЕКИ ИМЕНИ ТОКТОГУЛА САТЫЛГАНОВА</h1>
+                <div className="rectangle__electronic">
+                    <h1 className="rectangle__electronic-title">ЭЛЕКТРОННЫЙ КАТАЛОГ <br /> БИБЛИОТЕКИ ИМЕНИ ТОКТОГУЛА САТЫЛГАНОВА</h1>
                     <img className="ellipseA" src={EllipseA} alt="" />
                     <img className="ellipseB" src={EllipseB} alt="" />
                     <img className="ellipseC" src={EllipseC} alt="" />

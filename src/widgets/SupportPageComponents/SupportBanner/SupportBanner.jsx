@@ -1,15 +1,14 @@
-import Rectangle from '../../../shared/img/Rectanglel.jpg';
+import rectanglebanner from '../../../shared/img/rectanglebanner.png';
 import './SupportBanner.scss';
 
 export const SupportBanner = () => {
   return (
-    <div className="support">
-        <div className="rectangle">
-          <h1 className="title_rectangle">ПОДДЕРЖИТЕ <br /> РАЗВИТИЕ <br /> ЗНАНИЙ И <br /> КУЛЬТУРЫ</h1>
-
-          <div className="rectangle_sup">
-            <img className="rectangle_img" src={Rectangle} alt="" />
-            <p className="rectangle_p">Библиотека имени Токтогула Сатылганова – это не только хранилище <br /> знаний, но и динамично развивающееся образовательное и культурное <br /> пространство. Поддержка библиотеки играет ключевую роль в ее <br /> развитии, позволяя нам предоставлять читателям доступ к ценным <br /> ресурсам, организовывать мероприятия и внедрять новые технологии.</p>
+    <div className="support__container">
+        <div className="rectangle__banner">
+          <h1 className="rectangle__banner-title">ПОДДЕРЖИТЕ РАЗВИТИЕ ЗНАНИЙ И КУЛЬТУРЫ</h1>
+          <div className="rectangle__sup">
+            <img className="rectangle__sup-img" src={rectanglebanner} alt="" />
+            <p className="rectangle__sup-description">Библиотека имени Токтогула Сатылганова – это не только хранилище знаний, но и динамично развивающееся образовательное и культурное пространство. Поддержка библиотеки играет ключевую роль в ее развитии, позволяя нам предоставлять читателям доступ к ценным ресурсам, организовывать мероприятия и внедрять новые технологии.</p>
         </div>
         </div>
         
