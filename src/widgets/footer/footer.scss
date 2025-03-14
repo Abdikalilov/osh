@@ -2,105 +2,129 @@
     background: #105B60;
     color: #fff;
     padding: 99px 60px 50px 60px;
-
+  
     &_top {
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-
-        &_logo {
-            a {
-                text-decoration: none;
-                color: #fff;
-            }
-
-            &_social {
-                display: flex;
-                margin: 23px 0;
-                gap: 14px;
-
-&_bloc{
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #fff;
-    border-radius: 50%;
-}
-                .FaInstagram{
-                    background-color: #fff;
-                    width: 30px;
-                }
-                .CiFacebook{
-                    background-color: #fff;
-                }
-                .FaYoutube{
-                    background-color: #fff;
-                }
-                .FaGoogle{
-                    background-color: #fff;
-                }
-            }
-        }
-
-        &>div {
-            display: flex;
-            flex-direction: column;
-
-            h3 {
-                font-family: Kino;
-                font-weight: 400;
-                font-size: 22.5px;
-                margin-bottom: 15px;
-            }
-
-            .link {
-                margin: 8px 0;
-                font-family: SF Pro Display;
-                font-weight: 400;
-                font-size: 18px;
-                text-decoration: none;
-                color: #fff;
-            }
-        }
-    }
-
-    &_bottom {
-        border-top: 2px solid #fff;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 22px 0;
-        display: flex;
-
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+  
+      &_logo {
         a {
-            border: none;
-            color: #fff;
+          text-decoration: none;
+          color: #fff;
         }
-
-        .footer_views {
-            position: relative;
-            border: 1px solid #fff;
-            width: 110px;
+  
+        &_social {
+          display: flex;
+          margin: 23px 0;
+          gap: 14px;
+  
+          &_bloc {
+            width: 30px;
+            height: 30px;
             display: flex;
-
-            .footer_views_akar {
-                position: absolute;
-                top: 30%;
-                left: 5%;
-            }
-
-            .img {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-
-                div {
-                    display: flex;
-                    margin-left: 20px;
-                }
-            }
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            border-radius: 50%;
+          }
+  
+          .FaInstagram,
+          .CiFacebook,
+          .FaYoutube,
+          .FaGoogle {
+            background-color: #fff;
+            width: 30px;
+            height: 30px;
+          }
         }
+      }
+  
+      & > div {
+        display: flex;
+        flex-direction: column;
+  
+        h3 {
+          font-family: Kino;
+          font-weight: 400;
+          font-size: 22.5px;
+          margin-bottom: 15px;
+        }
+  
+        .link {
+          margin: 8px 0;
+          font-family: SF Pro Display;
+          font-weight: 400;
+          font-size: 18px;
+          text-decoration: none;
+          color: #fff;
+        }
+      }
     }
-}
+  
+    &_bottom {
+      border-top: 2px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 0;
+  
+      a {
+        border: none;
+        color: #fff;
+      }
+  
+      .footer_views {
+        position: relative;
+        border: 1px solid #fff;
+        width: 110px;
+        display: flex;
+  
+        .footer_views_akar {
+          position: absolute;
+          top: 30%;
+          left: 5%;
+        }
+  
+        .img {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+  
+          div {
+            display: flex;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1400px) {
+  
+  }
+  
+  @media screen and (max-width: 1200px) {
+      .footer{  
+         
+      }   
+  }
+  
+  @media screen and (max-width: 992px) {
+      .footer{
+         
+      }
+  }
+  
+  @media screen and (max-width: 768px) {
+      .footer{
+         
+      }
+     
+  }
+  
+  @media screen and (max-width: 576px) {
+     .footer{
+         
+     }
+  }
