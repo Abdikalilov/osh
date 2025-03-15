@@ -1,6 +1,6 @@
 .support_value {
     .title_value {
-        margin-top: 180px;
+        margin-top: 100px;
         color: #105B60;
         font-size: 30px;
     }
@@ -23,8 +23,9 @@
             border-radius: 10px;
 
             &-image {
-                width: 20%;
-                height: 53px;
+                width: 65px;
+                height: 55px;
+                object-fit: contain;
             }
 
             &-description {
@@ -43,6 +44,9 @@
     }
 
     @media (max-width: 1024px) {
+        .title_value {
+            font-size: 25px;
+        }
         .value__container {
             flex-wrap: wrap;
 
@@ -52,7 +56,17 @@
         }
     }
 
+    @media (max-width: 756px) {
+        .title_value {
+            font-size: 20px;
+        }
+    }
+
+
     @media (max-width: 576px) {
+        .title_value {
+            font-size: 20px;
+        }
         .value__container {
             flex-wrap: wrap;
             flex-direction: column;

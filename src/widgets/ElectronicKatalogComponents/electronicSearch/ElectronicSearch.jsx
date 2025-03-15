@@ -62,7 +62,7 @@ export const ElectronicSearch = () => {
                 <div className="filters__inputs">
                     <div className='filters__inputs-btn'>
                         <button className="filters__electronic-btn">Все</button>
-                        <button className="filters__electronic-butn">Популярное</button>
+                        <button className="filters__electronic-butn">Популярные</button>
                     </div>
                     <input className="filters__inputs-inp" type="text" placeholder="Автор" value={authorFilter} onChange={(e) => setAuthorFilter(e.target.value)}
                     />
@@ -74,15 +74,21 @@ export const ElectronicSearch = () => {
             </div>
             <div className="block_list">
                 {filteredCards.map((card) => (
-                    <div className="block_card" key={card.id}>
-                        <img className="block_img" src={card.image} alt="" />
-                        <div className="block_info">
-                            <h2 className="title_info">📖 НАЗВАНИЕ КНИГИ: {card.title} </h2>
-                            <h4 className="title_author">✍️ Автор: {card.author} </h4>
-                            <p className="title_description"><p>📜 Описание:</p> {card.description} </p>
+                    <div className="block_card row" key={card.id}>
+                        <div className='block_img'>
+                            <img className="block_img_item" src={card.image} alt="" /> 
+                        </div>
+                        <div className="block_info row">
+                            <div className='block_info_text'>
+                                <h2 className="title_info">📖 НАЗВАНИЕ КНИГИ: {card.title} </h2>
+                                <h4 className="title_author">✍️ Автор: {card.author} </h4>
+                                <p className="title_description"><p>📜 Описание:</p> {card.description} </p>
+                            </div>
                             <div className="buttons">
-                                <button className="read">читать</button>
-                                <button className="download">скачать</button>
+                                <div className='buttons_item'>
+                                    <button className="read">читать</button>
+                                    <button className="download">скачать</button>
+                                </div>
                             </div>
                         </div>
                     </div>
