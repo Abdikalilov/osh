@@ -92,31 +92,13 @@
             &_map {
                 display: flex;
 
-                &_text{
+                &_text {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     gap: 90px;
-                    
-                    .laug{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: #105B60;
-                        width: 60px;
-                        height: 35px;
-                        border-radius: 10px;
-                        color: #fff;
-                        padding: 3px;
-                        &_img{
-                            width: 20px;
-                            height: 20px;
-                        }
-                        .aman{
-                            width: 22px;
-                            height: 22px;
-                        }
-                    }
+
+
                 }
 
                 &_img {
@@ -135,7 +117,7 @@
                         border-radius: 50%;
                         height: 40px;
                         padding: 10px;
-                        
+
                     }
                 }
             }
@@ -143,4 +125,142 @@
     }
 }
 
+.language-switcher {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 15px;
+}
 
+.selected-lang {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    background: #105B60;
+    border-radius: 15px;
+    // transition: 0.3s;
+}
+
+.selected-lang:hover {
+    background: #105B60;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #105B60;
+    // border: 1px solid #105B60;
+    border-radius: 15px;
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 77px;
+    // z-index: 10;
+
+
+}
+
+.dropdown div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+
+
+}
+
+.dropdown div:hover {
+    background: #105B60;
+}
+
+// @media screen and (max-width: 1024px) {
+//     .header {
+//         flex-direction: column;
+//         align-items: center;
+//         max-width: 100%;
+//     }
+
+//     .header_top {
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//         width: 100%;
+//     }
+
+//     .header_top_logo {
+//         margin-bottom: 10px;
+//     }
+
+//     .header_top_inp {
+//         width: 100%;
+//         max-width: 90%;
+//     }
+
+//     .header_bottom {
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//         width: 100%;
+//     }
+
+//     .header_bottom_social {
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//         width: 100%;
+//     }
+
+//     .header_bottom_social_lag {
+//         width: auto;
+//     }
+
+//     .header_bottom_social_map {
+//         flex-direction: column;
+//         align-items: center;
+//     }
+
+//     .header_bottom_social_map_text {
+//         gap: 20px;
+//     }
+
+//     .header_bottom_social_map_img {
+//         gap: 15px;
+//     }
+// }
+
+@media screen and (max-width: 1400px) {
+  
+}
+
+@media screen and (max-width: 1200px) {
+    .header{
+        max-width: 1140px;
+    }   
+    
+}
+
+@media screen and (max-width: 992px) {
+    .header{
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        max-width: 720px;
+    }
+   
+}
+
+@media screen and (max-width: 576px) {
+   .header{
+        max-width: 540px;
+   }
+}
