@@ -1,146 +1,178 @@
 .header {
-    &_top {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &_row {
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
+        width: 100%;
 
-        &_logo {}
+        .logo {
+            width: clamp(100px, 20vw, 300px);
+            flex-shrink: 0;
 
-        &_inp {
-            border: 1px solid #105B60;
-            display: flex;
-            border-radius: 35px;
-            padding: 5px;
-            width: 300px;
-
-            input {
-                border: none;
+            img {
                 width: 100%;
-                outline: none;
-            }
-
-            button {
-                border: none;
-                background: transparent;
-            }
-
-
-        }
-
-        &_eye {
-            background: transparent;
-            border: none;
-            margin: 0 64px;
-
-
-            .eye {
-                width: 30px;
-                height: 30px;
+                height: auto;
+                display: block;
             }
         }
-    }
 
-    .link {
-        text-decoration: none;
-        color: #105B60;
-        font-family: SF Pro Display;
-        font-weight: 500;
-        font-size: 18px;
-        margin: 0px 15px;
-        white-space: nowrap;
-
-    }
-
-    &_bottom {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        &_social {
+        .tools {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: clamp(15px, 2vw, 30px);
+            margin: 0 20px;
 
-            &_lag {
+            .header_eye {
+                background: transparent;
+                border: none;
+                cursor: pointer;
                 display: flex;
-                background-color: #105B60;
-                width: 56px;
-                padding: 9px;
-                border-radius: 10px;
+                align-items: center;
 
-                .rus {}
-
-                select {
-                    // display: none;
-                    text-align: none;
-
-                    border: none;
-                    outline: none;
-                    background: #105B60;
-                    color: white;
-                    border-radius: 10px;
-
-                    option {
-                        border: none;
-                        outline: none;
-                        background: #105B60;
-                        color: #fff;
-                    }
+                .eye {
+                    width: 30px;
+                    height: 30px;
                 }
             }
+        }
 
-            &_map {
-                display: flex;
+        .mobile-tools {
+            display: none;
+        }
 
-                &_text{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 90px;
-                    
-                    .laug{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: #105B60;
-                        width: 60px;
-                        height: 35px;
-                        border-radius: 10px;
-                        color: #fff;
-                        padding: 3px;
-                        &_img{
-                            width: 20px;
-                            height: 20px;
-                        }
-                        .aman{
-                            width: 22px;
-                            height: 22px;
-                        }
-                    }
-                }
+        .headerNav {
+            justify-content: space-between;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
 
-                &_img {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 30px;
+    &_left {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        min-width: 320px;
 
-                    .locate {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 40px;
-                        background-color: #105B60;
-                        color: #fff;
-                        border-radius: 50%;
-                        height: 40px;
-                        padding: 10px;
-                        
-                    }
-                }
+        .right-part {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+
+    &_nav-top {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    &_nav-bottom {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &_nav-bottom-links {
+        flex: 1;
+        justify-content: flex-start;
+    }
+
+    &_right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &_eye {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        .eye {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &_icon {
+        display: flex;
+        gap: 10px;
+    }
+
+    .locate {
+        width: 40px;
+        height: 40px;
+        background-color: #105B60;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        &_row {
+            gap: 20px;
+            grid-template-columns: 200px 1fr auto;
+
+            .tools {
+                gap: 15px;
             }
         }
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .header {
+        &_row {
+            .logo {
+                width: 180px;
+            }
 
+            .tools {
+                display: none;
+            }
+
+            .mobile-tools {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 15px;
+                margin-left: auto;
+            }
+
+            .headerNav {
+                flex: 1;
+                margin: 0 30px;
+                justify-content: flex-end;
+            }
+        }
+
+        &_nav-bottom {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        padding: 10px 0;
+
+        &_row {
+            .logo {
+                width: 180px;
+            }
+        }
+    }
+}

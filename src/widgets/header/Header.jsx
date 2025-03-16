@@ -1,42 +1,32 @@
-import './header.scss';
-import { useState, useRef } from 'react';
-import { NavLink } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-import Group from '../../shared/image/Group.svg';
-import RUS from '../../shared/image/image 2 (1).svg';
-import Icon from '../../shared/image/Icon.svg';
-import Kg from '../../shared/image/image 3.svg';
-import { FaEyeSlash, FaInstagram, FaFacebook } from "react-icons/fa";
-import { MdOutlineLocationOn, MdOutlinePhone } from "react-icons/md";
-import { IoIosArrowDown } from "react-icons/io";
+import logo from '../../shared/image/Group.svg';
+import "./header.scss"
+import Search from './search/Search';
+import { FaEyeSlash } from "react-icons/fa";
+import { useDispatch, useSelector, } from 'react-redux';
 import { VisuallyImpaired } from '../../entities/VisuallyImpaired/VisuallyImpaired';
 import { activeMode, deactivateMode } from '../../app/store/reducers/visually';
+import HeaderNav from './headerNav/HeaderNav';
+import Lang from './lang/Lang';
+import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { MdOutlineLocationOn, MdOutlinePhone } from "react-icons/md";
+import Burger from './burger/Burger';
+import { useState, useEffect } from 'react';
 
 export const Header = () => {
-  const [selected, setSelected] = useState(Kg);
-  const [isOpen, setIsOpen] = useState(false);
-  const selectRef = useRef(null);
   const dispatch = useDispatch();
   const { active } = useSelector((state) => state.visually);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
 
-  const options = [
-    { value: "1", label: Kg },
-    { value: "2", label: RUS },
-  ];
-
-  const handleToggle = () => setIsOpen(prev => !prev);
-  const handleSelect = (option) => {
-    setSelected(option.label);
-    setIsOpen(false);
-  };
-  const handleBlur = (event) => {
-    if (!selectRef.current?.contains(event.relatedTarget)) {
-      setIsOpen(false);
-    }
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1024);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const mainTextSpeech = (text) => {
-    window.speechSynthesis.cancel(); 
+    window.speechSynthesis.cancel();
     const talk = new SpeechSynthesisUtterance(text);
     talk.lang = 'ru-RU';
     window.speechSynthesis.speak(talk);
@@ -45,7 +35,7 @@ export const Header = () => {
   const handleVisuallyImpairedToggle = () => {
     if (active) {
       dispatch(deactivateMode());
-      setTimeout(() => mainTextSpeech('Режим для слабовидящих выключен'), 100); 
+      setTimeout(() => mainTextSpeech('Режим для слабовидящих выключен'), 100);
     } else {
       dispatch(activeMode());
       setTimeout(() => mainTextSpeech('Режим для слабовидящих включен'), 100);
@@ -53,67 +43,51 @@ export const Header = () => {
   };
 
   return (
-    <div className='header container'>
-            {active && <VisuallyImpaired mainTextSpeech={mainTextSpeech} />}
-
-      <div className='header_top'>
-        <img src={Group} alt="logo" className='header_top_logo' />
-        <div className='header_top_inp'>
-          <input type="text" placeholder='Поиск' />
-          <button><img src={Icon} alt="search" /></button>
-        </div>
-        <button className='header_top_eye' onClick={handleVisuallyImpairedToggle}>
-          <FaEyeSlash color='#105B60' className='eye' />
-        </button>
-        <nav>
-          <NavLink className='link' to="/about">О библиотеке</NavLink>
-          <NavLink className='link' to="/support">Поддержать библиотеку</NavLink>
-          <NavLink className='link' to="/news">Новости</NavLink>
-          <NavLink className='link' to="/services">Услуги</NavLink>
-          <NavLink className='link' to="/catalog">Каталог</NavLink>
-        </nav>
-      </div>
-
-      <div className="header_bottom">
-        <nav>
-          <NavLink className='link' to="/afisha">Афиша мероприятий</NavLink>
-          <NavLink className='link' to="/professional">Профессиональная деятельность</NavLink>
-          <NavLink className='link' to="/reader">Читателям</NavLink>
-          <NavLink className='link' to="/project">Проекты</NavLink>
-        </nav>
-        <div className="header_bottom_social">
-          <div className='header_bottom_social_map'>
-            <div className='header_bottom_social_map_text'>
-              <div className='laug' ref={selectRef} onBlur={handleBlur}>
-                <div onClick={handleToggle} className="select-trigger">
-                  <img className='laug_img' src={selected} alt="language" />
-                  <IoIosArrowDown />
+    <div className="">
+      {active && <VisuallyImpaired mainTextSpeech={mainTextSpeech} />}
+      <div className='header'>
+        <div className="header container">
+          <div className="header_row">
+            <div className="logo">
+              <img src={logo} alt="logo" />
+            </div>
+            {!isMobile ? (
+              <>
+                <div className="tools">
+                  <Search />
+                  <button className='header_eye' onClick={handleVisuallyImpairedToggle}>
+                    <FaEyeSlash color='#105B60' className='eye' />
+                  </button>
                 </div>
-                {isOpen && (
-                  <div className="abs">
-                    {options.map((option) => (
-                      <div
-                        key={option.value}
-                        style={{ marginTop: '10px' }}
-                        onClick={() => handleSelect(option)}
-                      >
-                        <img className='aman' src={option.label} alt="option" />
-                      </div>
-                    ))}
-                  </div>
-                )}
+                <HeaderNav className="header_nav-top" start={0} end={5} />
+              </>
+            ) : (
+              <div className="mobile-tools">
+                <Lang />
+                <button className='header_eye' onClick={handleVisuallyImpairedToggle}>
+                  <FaEyeSlash color='#105B60' className='eye' />
+                </button>
+                <Search />
+                <Burger />
               </div>
-              <div className='header_bottom_social_map_img'>
-                <div className='locate'><MdOutlineLocationOn /></div>
-                <div className='locate'><MdOutlinePhone /></div>
-                <div className='locate'><FaInstagram /></div>
-                <div className='locate'><FaFacebook /></div>
+            )}
+          </div>
+          {!isMobile && (
+            <div className="header_nav-bottom">
+              <HeaderNav className="header_nav-bottom-links" start={5} end={10} />
+              <div className="header_right">
+                <Lang />
+                <div className='header_icon'>
+                  <div className='locate'><MdOutlineLocationOn /></div>
+                  <div className='locate'><MdOutlinePhone /></div>
+                  <div className='locate'><FaInstagram /></div>
+                  <div className='locate'><FaFacebook /></div>
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
-
     </div>
   );
 };

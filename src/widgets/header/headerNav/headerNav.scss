@@ -1,0 +1,42 @@
+.headerNav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: clamp(10px, 1.5vw, 20px);
+    width: 100%;
+    margin: 15px 0;
+    &_link {
+        text-decoration: none;
+        color: #105B60;
+        font-weight: 500;
+        font-size: clamp(10px, 1vw, 16px); // Уменьшаем минимальный размер шрифта
+        white-space: nowrap;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: darken(#105B60, 15%);
+        }
+
+    }
+
+    @media screen and (max-width: 1200px) {
+        gap: 10px;
+        margin: 10px 0;
+
+        &_link {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .header_nav-top,
+    .header_nav-bottom {
+        display: none;
+    }
+}
