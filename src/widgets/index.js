@@ -41,6 +41,7 @@ export { CatalogBanner } from './catalogSection/catalogBanner/CatalogBanner';
 export { CatalogInput } from './catalogSection/catalogInput/CatalogInput';
 export {HomeNews}  from "./HomePageComponents/homeNews/HomeNews"
 export {NewsBanner} from "./NewsPageComponents/NewsBanner/NewsBanner"
-
+export { NewsBooksUpdate} from "./NewsPageComponents/NewsBooksUpdate/NewsBooksUpdate"
+export {NewsAdvertisment} from "./NewsPageComponents/NewsAdvertisment/NewsAdvertisment"
 
 export {Rating} from './readerPageComponents/rating/Rating';
