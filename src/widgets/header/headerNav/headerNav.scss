@@ -19,18 +19,8 @@
 
     }
 
-    @media screen and (max-width: 1200px) {
-        gap: 10px;
-        margin: 10px 0;
 
-        &_link {
-            font-size: 14px;
-        }
-    }
 
-    @media screen and (max-width: 1024px) {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 1024px) {

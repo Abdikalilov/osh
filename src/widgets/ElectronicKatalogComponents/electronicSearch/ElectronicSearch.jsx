@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+
+
+import { useState } from 'react';
 import './ElectronicSearch.scss';
 
 export const ElectronicSearch = () => {
@@ -55,46 +57,61 @@ export const ElectronicSearch = () => {
 
     return (
         <div>
-            <div className="filters__electronic">
-                <h1 className="filters__electronic-title">ЭЛЕКТРОННЫЕ КАТАЛОГИ</h1>
+            <div className="electronicSearch container">
+                <h1 className="electronicSearch_title">ЭЛЕКТРОННЫЕ КАТАЛОГИ</h1>
 
-
-                <div className="filters__inputs">
-                    <div className='filters__inputs-btn'>
-                        <button className="filters__electronic-btn">Все</button>
-                        <button className="filters__electronic-butn">Популярные</button>
+                <div className="electronicSearch_filters">
+                    <div className="electronicSearch_filters_btn">
+                        <button className="electronicSearch_filters_btn_all">Все</button>
+                        <button className="electronicSearch_filters_btn_popular ">Популярные</button>
                     </div>
-                    <input className="filters__inputs-inp" type="text" placeholder="Автор" value={authorFilter} onChange={(e) => setAuthorFilter(e.target.value)}
-                    />
-                    <input className="filters__inputs-inp" type="text" placeholder="Название документа" value={titleFilter} onChange={(e) => setTitleFilter(e.target.value)}
-                    />
-                    <input className="filters__inputs-inp" type="text" placeholder="Ключевое слово" value={keywordFilter} onChange={(e) => setKeywordFilter(e.target.value)}
-                    />
+                    <input className="electronicSearch_filters_inp" type="text" placeholder="Автор" value={authorFilter} onChange={(e) => setAuthorFilter(e.target.value)} />
+                    <input className="electronicSearch_filters_inp" type="text" placeholder="Название документа" value={titleFilter} onChange={(e) => setTitleFilter(e.target.value)} />
+                    <input className="electronicSearch_filters_inp" type="text" placeholder="Ключевое слово" value={keywordFilter} onChange={(e) => setKeywordFilter(e.target.value)} />
+
                 </div>
-            </div>
-            <div className="block_list">
-                {filteredCards.map((card) => (
-                    <div className="block_card row" key={card.id}>
-                        <div className='block_img'>
-                            <img className="block_img_item" src={card.image} alt="" /> 
-                        </div>
-                        <div className="block_info row">
-                            <div className='block_info_text'>
-                                <h2 className="title_info">📖 НАЗВАНИЕ КНИГИ: {card.title} </h2>
-                                <h4 className="title_author">✍️ Автор: {card.author} </h4>
-                                <p className="title_description"><p>📜 Описание:</p> {card.description} </p>
-                            </div>
-                            <div className="buttons">
-                                <div className='buttons_item'>
-                                    <button className="read">читать</button>
-                                    <button className="download">скачать</button>
+                <div className="electronicSearch_info">
+                    {filteredCards.map((card) => (
+                        <div className="electronicSearch_info_block" key={card.id}>
+                            <div className="desktop_view">
+                                <div className="electronicSearch_info_block_img">
+                                    <img src={card.image} alt="" />
+                                </div>
+                                <div className="electronicSearch_info_block_text">
+                                    <h2 className="electronicSearch_info_block_text_name">📖 НАЗВАНИЕ КНИГИ: {card.title}</h2>
+                                    <h4 className="electronicSearch_info_block_text_author">✍️ Автор: {card.author}</h4>
+                                    <p className="electronicSearch_info_block_text_description">
+                                        <span>📜 Описание:</span> {card.description}
+                                    </p>
+                                </div>
+                                <div className="electronicSearch_info_block_btn">
+                                    <button className="electronicSearch_info_block_btn_read">читать</button>
+                                    <button className="electronicSearch_info_block_btn_download">скачать</button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                ))}
-                <div className='btn_more'>
-                    <button className="more">Ещё</button>
+
+                            <div className="mobile_view">
+                                    <div className="electronicSearch_info_block_top">
+                                        <div className="electronicSearch_info_block_img">
+
+                                            <img src={card.image} alt="" />
+                                        </div>
+
+                                        <div className="electronicSearch_info_block_text">
+                                            <h4 className="electronicSearch_info_block_text_author">✍️ Автор: {card.author}</h4>
+                                            <h2 className="electronicSearch_info_block_text_name">📖 НАЗВАНИЕ КНИГИ: {card.title}</h2>
+                                        </div>
+                                    </div>
+                                    <p className="electronicSearch_info_block_text_description">
+                                        <span>📜 Описание:</span> {card.description}
+                                    </p>
+                                    <div className="electronicSearch_info_block_btn">
+                                        <button className="electronicSearch_info_block_btn_read">читать</button>
+                                        <button className="electronicSearch_info_block_btn_download">скачать</button>
+                                    </div>
+                                </div>
+                            </div>
+                    ))}
                 </div>
             </div>
         </div>
