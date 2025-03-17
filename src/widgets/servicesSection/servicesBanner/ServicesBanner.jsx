@@ -1,7 +1,3 @@
-
-
-
-
 import './servicesBanner.scss'
 import nenoigirl from '../../../shared/img/books.svg'
 import nenoibook from '../../../shared/img/group.svg'

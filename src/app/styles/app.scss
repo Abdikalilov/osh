@@ -1,23 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @font-face {
-  font-family: "Bebas Neue";
-  src: url("../styles/assets/bebasNeue/BebasNeue-Bold.otf") format("otf"),
-    url("../styles/assets/bebasNeue/BebasNeue-Bold.ttf") format("truetype"),
-    url("../styles/assets/bebasNeue/BebasNeue-Regular.otf") format("otf"),
-    url("../styles/assets/bebasNeue/BebasNeue-Regular.ttf") format("truetype");
+  font-family: "Kino";
+  src: url("./fonts/Kino/Kino-Regular.otf") format("otf"),
+    url("./fonts/Kino/Kino-Regular.otf") format("truetype"),
+    url("./fonts/Kino/Kino-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sf";
+  src: url("./fonts/Kino/Kino-Regular.otf") format("otf"),
+    url("./fonts/Kino/Kino-Regular.otf") format("truetype"),
+    url("./fonts/Kino/Kino-Regular.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "SF Pro Display";
-  src: url("../styles/assets/sanFrancisco/SF-Pro-Display-Bold.otf")
-      format("otf"),
-    url("../styles/assets/sanFrancisco/SF-Pro-Display-Medium.otf") format("otf"),
-    url("../styles/assets/sanFrancisco/SF-Pro-Display-Regular.otf")
-      format("truetype"),
-    url("../styles/assets/sanFrancisco/SF-Pro-Display-Semibold.otf")
-      format("otf");
+  src: url("./fonts/sanFrancisco/SF-Pro-Display-Bold.otf")format("otf"),
+    url("./fonts/sanFrancisco/SF-Pro-Display-Medium.otf") format("otf"),
+    url("./fonts/sanFrancisco/SF-Pro-Display-Regular.otf")format("truetype"),
+    url("./fonts/sanFrancisco/SF-Pro-Display-Semibold.otf")format("otf");
   font-weight: 400;
   font-style: normal;
 }
@@ -31,7 +36,9 @@
 body {
   font-family: "SF Pro Display";
 }
-
+button{
+  cursor: pointer;
+}
 .container {
   max-width: 1320px;
   width: 100%;

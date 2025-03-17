@@ -3,6 +3,7 @@ import HeaderNav from "../headerNav/HeaderNav"
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { MdOutlineLocationOn, MdOutlinePhone } from "react-icons/md";
 import "./burger.scss"
+import Lang from '../lang/Lang';
 
 const Burger = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,10 @@ const Burger = () => {
         </label>
 
         <div className={`menu__box ${isOpen ? 'open' : ''}`}>
+          <div className='langg'>
+
+          <Lang />
+          </div>
           <HeaderNav />
           <div className="icons">
             <div className="locates">

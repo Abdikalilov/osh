@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+
+
+import { useState } from 'react';
 import './ElectronicSearch.scss';
 
 export const ElectronicSearch = () => {
@@ -11,7 +13,7 @@ export const ElectronicSearch = () => {
         {
             id: 1,
             title: "ПРОЩАЙ, ГУЛЬСАРЫ",
-            author: "Чингиз Айтматов",
+            author: "Чыңгыз Айтматов",
             description: "Роман рассказывает о жизни старого чабана Танабая и его верного коня Гульсары. Это история о дружбе, изменениях в обществе и воспоминаниях о прошлом, наполненная глубокими размышлениями о человеческой судьбе.",
             image: 'https://s3-alpha-sig.figma.com/img/a91c/5f80/7ff4a2cb3e95c559be3edecf125b6968?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=o1P1K7uA3ONoTLOvoo4OAx6IJzptTNg5h8~aFPNRpcI5G7Cc9w4dCHvptqh7Cgq-Q67PUP-lBP4p356Pg3RsHb1UxGhhBFaDWEt1kUPcmDOUaiddA-ztY16~2SIWBApqvMwtiw-qVNZDbTXESux7qWT3z~6p6umkrvt--QuHzGyhDJTW~yyzCRm1i~huoq~q8nItakdpEYWUyWEPsHiELf56Nb-LHOpVghn0xSfHOxujbBpMeDccuLIqQn1yvESGx~ktk4GjK9vMcK9fu0ZSnz96ycyjYh09em2BTahkXXhBssSZ7CMT0mF~I9zINkjAIh2WnN3JGLoLbnQcRVXa~A__'
         },
@@ -55,33 +57,62 @@ export const ElectronicSearch = () => {
 
     return (
         <div>
-            <div className="filters">
-                <h1 className="title_electr">ЭЛЕКТРОННЫЕ КАТАЛОГИ</h1>
-                <button className="filter_btn">Все</button>
-                <button className="filter_butn">Популярное</button>
-                <input className="filter_inp" type="text" placeholder="Автор" value={authorFilter} onChange={(e) => setAuthorFilter(e.target.value)}
-                />
-                <input className="filter_inp" type="text" placeholder="Название документа" value={titleFilter} onChange={(e) => setTitleFilter(e.target.value)}
-                />
-                <input className="filter_inp" type="text" placeholder="Ключевое слово" value={keywordFilter} onChange={(e) => setKeywordFilter(e.target.value)}
-                />
-            </div>
-            <div className="block_list">
-                {filteredCards.map((card) => (
-                    <div className="block_card" key={card.id}>
-                        <img className="block_img" src={card.image} alt="" />
-                        <div className="block_info">
-                            <h2 className="title_info">📖 НАЗВАНИЕ КНИГИ: {card.title} </h2>
-                            <h4 className="title_author">✍️ Автор: {card.author} </h4>
-                            <p className="title_description"><p>📜 Описание:</p> {card.description} </p>
-                            <div className="buttons">
-                                <button className="read">читать</button>
-                                <button className="download">скачать</button>
-                            </div>
-                        </div>
+            <div className="electronicSearch container">
+                <h1 className="electronicSearch_title">ЭЛЕКТРОННЫЕ КАТАЛОГИ</h1>
+
+                <div className="electronicSearch_filters">
+                    <div className="electronicSearch_filters_btn">
+                        <button className="electronicSearch_filters_btn_all">Все</button>
+                        <button className="electronicSearch_filters_btn_popular ">Популярные</button>
                     </div>
-                ))}
-                <button className="more">Ещё</button>
+                    <input className="electronicSearch_filters_inp" type="text" placeholder="Автор" value={authorFilter} onChange={(e) => setAuthorFilter(e.target.value)} />
+                    <input className="electronicSearch_filters_inp" type="text" placeholder="Название документа" value={titleFilter} onChange={(e) => setTitleFilter(e.target.value)} />
+                    <input className="electronicSearch_filters_inp" type="text" placeholder="Ключевое слово" value={keywordFilter} onChange={(e) => setKeywordFilter(e.target.value)} />
+
+                </div>
+                <div className="electronicSearch_info">
+                    {filteredCards.map((card) => (
+                        <div className="electronicSearch_info_block" key={card.id}>
+                            <div className="desktop_view">
+                                <div className="electronicSearch_info_block_img">
+                                    <img src={card.image} alt="" />
+                                </div>
+                                <div className="electronicSearch_info_block_text">
+                                    <h2 className="electronicSearch_info_block_text_name">📖 НАЗВАНИЕ КНИГИ: {card.title}</h2>
+                                    <h4 className="electronicSearch_info_block_text_author">✍️ Автор: {card.author}</h4>
+                                    <p className="electronicSearch_info_block_text_description">
+                                        <span>📜 Описание:</span> {card.description}
+                                    </p>
+                                </div>
+                                <div className="electronicSearch_info_block_btn">
+                                    <button className="electronicSearch_info_block_btn_read">читать</button>
+                                    <button className="electronicSearch_info_block_btn_download">скачать</button>
+                                </div>
+                            </div>
+
+                            <div className="mobile_view">
+                                    <div className="electronicSearch_info_block_top">
+                                        <div className="electronicSearch_info_block_img">
+
+                                            <img src={card.image} alt="" />
+                                        </div>
+
+                                        <div className="electronicSearch_info_block_text">
+                                            <h4 className="electronicSearch_info_block_text_author">✍️ Автор: {card.author}</h4>
+                                            <h2 className="electronicSearch_info_block_text_name">📖 НАЗВАНИЕ КНИГИ: {card.title}</h2>
+                                        </div>
+                                    </div>
+                                    <p className="electronicSearch_info_block_text_description">
+                                        <span>📜 Описание:</span> {card.description}
+                                    </p>
+                                    <div className="electronicSearch_info_block_btn">
+                                        <button className="electronicSearch_info_block_btn_read">читать</button>
+                                        <button className="electronicSearch_info_block_btn_download">скачать</button>
+                                    </div>
+                                </div>
+                            </div>
+                    ))}
+                </div>
             </div>
         </div>
     );

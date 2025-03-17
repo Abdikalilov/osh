@@ -3,33 +3,51 @@ import science from '../../../shared/img/science.png';
 import star from '../../../shared/img/star.png';
 
 export function SupportValue() {
+
+    const item = [
+        {
+            id: 1,
+            title: 'ДОСТУПНОСТЬ',
+            image: star,
+            description: 'Знания должны быть доступны каждому, независимо от возраста, социального статуса и места проживания.'
+        },
+        {
+            id: 2,
+            title: 'ОБРАЗОВАНИЕ',
+            image: star,
+            description: 'Мы поддерживаем стремление к саморазвитию, предоставляя широкий спектр образовательных ресурсов.'
+        },
+        {
+            id: 3,
+            title: 'СОТРУДНИЧЕСТВО',
+            image: star,
+            description: 'Работаем с партнерами и организациями для развития культуры и науки.'
+        },
+        {
+            id: 4,
+            title: 'ИННОВАЦИИ',
+            image: star,
+            description: 'Знания должны быть доступны каждому, независимо от внедряем современные технологии.'
+        },
+    ];
+
+
     return (
-        <div>
+        <section>
             <div className="support_value">
                 <h1 className="title_value">ЦЕННОСТИ БИБЛИОТЕКИ</h1>
-                <div className="value_container">
-                    <div className="value_block">
-                        <img className="value_img" src={science} alt="" />
-                        <h3 className="block_title">ДОСТУПНОСТЬ</h3>
-                        <p className="value_p">Знания должны быть доступны каждому, независимо от возраста, социального статуса и места проживания.</p>
-                    </div>
-                    <div className="value_block">
-                        <img className="value_img" src={star} alt="" />
-                        <h3 className="block_title">ОБРАЗОВАНИЕ</h3>
-                        <p className="value_p">Мы поддерживаем стремление к саморазвитию, предоставляя широкий спектр образовательных ресурсов.</p>
-                    </div>
-                    <div className="value_block">
-                        <img className="value_img" src={science} alt="" />
-                        <h3 className="block_title">СОТРУДНИЧЕСТВО</h3>
-                        <p className="value_p">Работаем с партнерами и организациями для развития культуры и науки.</p>
-                    </div>
-                    <div className="value_block">
-                        <img className="value_img" src={star} alt="" />
-                        <h3 className="block_title">ИННОВАЦИИ</h3>
-                        <p className="value_p">Знания должны быть доступны каждому, независимо от внедряем современные технологии.</p>
-                    </div>
+                <div className="value__container">
+                    {
+                        item.map((item) => (
+                            <div key={item.id} className="value__block">
+                                <img className="value__block-image" src={science} alt="" />
+                                <h3 className="value__block-title">{item.title}</h3>
+                                <p className="value__block-description">{item.description}</p>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
-        </div>
+        </section>
     );
 };

@@ -5,7 +5,7 @@ export const SupportPartners = () => {
     return (
         <div>
             <div className="sponsor">
-                <h1 className="title_sponsor">НАШИ ПАРТНЕРЫ, ГЛАВНЫЕ СПОНСОРЫ</h1>
+                <h1 className="title_sponsor">ПАРТНЕРЫ</h1>
                 <img className="img_sponsor" src={Sponsors} alt="" />
             </div>
         </div>

@@ -63,7 +63,10 @@ export const Header = () => {
               </>
             ) : (
               <div className="mobile-tools">
-                <Lang />
+                <div className='lang'>
+
+                <Lang  />
+                </div>
                 <button className='header_eye' onClick={handleVisuallyImpairedToggle}>
                   <FaEyeSlash color='#105B60' className='eye' />
                 </button>
