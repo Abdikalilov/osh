@@ -9,13 +9,10 @@
         text-decoration: none;
         color: #105B60;
         font-weight: 500;
-        font-size: clamp(10px, 1vw, 16px); // Уменьшаем минимальный размер шрифта
+        font-size: clamp(10px, 1vw, 16px);
         white-space: nowrap;
         transition: color 0.3s ease;
 
-        &:hover {
-            color: darken(#105B60, 15%);
-        }
 
     }
 
