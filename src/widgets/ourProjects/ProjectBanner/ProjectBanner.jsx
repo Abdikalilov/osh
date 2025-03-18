@@ -1,38 +1,29 @@
 import img from '../../../shared/image/banner2.png'
-import  img2 from '../../../shared/image/banner2.svg'
 import img3 from '../../../shared/image/Banner.png'
+import "./projectbanner.scss"
 
-import './projectbanner.scss'
-
-export const ProjectBanner = () => { 
+export const ProjectBanner = () => {
   return (
-    <section className="container projectbanner">
-     
-      <div className='projectbanner_group'>
-      <h1>Наши проекты: читаем, учимся, развиваемся</h1>
-      <div className='projectbanner_group_image'>
-        <img  className='projectbanner_group_image_img1' src={img} alt="" />
-        <img  className='projectbanner_group_image_img2' src={img2} alt="" />
-      </div></div>
-      <div>
-        <img className='projectbanner_img3' src={img3} alt="" />
-      </div>
-      <h2>Библиотека имени Токтогула Сатылганова </h2>
+    <section className='projectBanner'>
+        <h1>Наши проекты: читаем, учимся, развиваемся</h1>
+        <img className='projectbanner_img1' src={img} alt="Project" />
 
-        
-        
+        <div className="rotating-wrapper">
+          <svg id="rotatingText" viewBox="0 0 200 200" >
+            <defs>
+              <path id="circle" d="M 100, 100 m -70, 0 a 70,70 0 1,0 140,0 a 70,70 0 1,0 -140,0"></path>
+            </defs>
+            <text>
+              <textPath className="text" href="#circle" startOffset="0%">
+                 •  Our project • Our project • Our project 
+              </textPath>
+            </text>
+          </svg>
+        </div>
+        <h3>Библиотека имени Токтогула Сатылганова </h3>
+
+        <img className='projectbanner_img2' src={img3} alt="Project" />
+      
     </section>
   )
 }
-
-//div className="row">
- //         <div className="col-6">
- //           <div className="banner__content">
-// //             <img src={img} alt="" />
- //             <img className='banner__content-img' src={img2} alt="" />
- //           </div>
- //         </div>
- //             <img src={img3} alt="" />
-         //   </div>
- //         </div>
-// //      </div>
