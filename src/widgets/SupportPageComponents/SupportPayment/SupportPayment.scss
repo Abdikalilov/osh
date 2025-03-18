@@ -57,18 +57,31 @@
         }
     }
 
-    @media (max-width: 536px) {
+    @media (max-width: 576px) {
         .title_payment {
             font-size: 20px;
         }
 
         .payment_text {
-            font-size: 30px;
+            font-size: 25px;
             margin-left: 30px;
         }
 
         .img_payment {
-            width: 70px;
+            width: 50px;
+            margin-right: 30px;
+        }
+    }
+    @media (max-width: 400px) {
+      
+
+        .payment_text {
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+        .img_payment {
+            width: 50px;
             margin-right: 30px;
         }
     }

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import HeaderNav from "../headerNav/HeaderNav"
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { MdOutlineLocationOn, MdOutlinePhone } from "react-icons/md";
@@ -7,6 +7,21 @@ import Lang from '../lang/Lang';
 
 const Burger = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
+  const handleClick = () => {
+    setIsOpen(false);
+  };
 
   return (
     <>
@@ -22,10 +37,10 @@ const Burger = () => {
           <span></span>
         </label>
 
-        <div className={`menu__box ${isOpen ? 'open' : ''}`}>
+        <div className={`menu__box ${isOpen ? 'open' : ''}`} onClick={handleClick}>
           <div className='langg'>
 
-          <Lang />
+            <Lang />
           </div>
           <HeaderNav />
           <div className="icons">
