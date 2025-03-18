@@ -15,6 +15,8 @@
             width: 50%;
         img{
             width: 100%;
+            border-radius: 5px;
+            margin: 0 auto;
         }
         }
         &_text{
@@ -22,7 +24,7 @@
             margin-left: 15px;
         h3{
             margin-top: 20px;
-            font-size: 18px;
+            font-size: 14px;
             font-weight: 600;
             img{
             width: 15px;
@@ -52,24 +54,24 @@
 
 
 
-@media screen and (max-width: 1400px) {
-    .afishaDetail{
-        &_group{
-            flex-direction: column;
+// @media screen and (max-width: 1400px) {
+//     .afishaDetail{
+//         &_group{
+//             flex-direction: column;
 
-            &_img{
-                width: 100%;
-            }
+//             &_img{
+//                 width: 100%;
+//             }
 
-            &_text{
-                width: 100%;
-            }
-        }
+//             &_text{
+//                 width: 100%;
+//             }
+//         }
         
-    }
-}
+//     }
+// }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
     .afishaDetail{
         &_group{
             flex-direction: column;
@@ -89,14 +91,13 @@
 @media screen and (max-width: 992px) {
     .afishaDetail{
         h1{
-            font-size: 35px;
+            font-size: 25px;
         }
         &_group{
-          
+            flex-direction: column;
 
-d
             &_img{
-                width: 90%;
+                width: 100%;
             }
 
             &_text{
@@ -116,7 +117,7 @@ d
             flex-direction: column;
 
             &_img{
-                width: 90%;
+                width: 100%;
             }
 
             &_text{
@@ -137,6 +138,7 @@ d
             flex-direction: column;
 
             &_img{
+                width: 100%;
             }
 
             &_text{
