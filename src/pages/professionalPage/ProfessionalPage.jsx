@@ -21,6 +21,7 @@ export const ProfessionalPage = () => {
     ];
 
     return (
+        <div className="container">
         <div className="professional-container">
             <div className="professional-content">
                 <Sidebar setSelected={setSelected} list={categories} selectedId={selected} />
@@ -30,6 +31,7 @@ export const ProfessionalPage = () => {
                     {selected === 3 && <Multimedia />}
                 </div>
             </div>
+        </div>
         </div>
     );
 }

@@ -3,8 +3,7 @@
 
   .page-title {
     color: #105B60;
-    padding: 30px;
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 20px;
     font-weight: 600px;
     text-transform: lowercase;
@@ -22,4 +21,12 @@
   .content-wrapper {
     flex-direction: column;
   }
+
+  .content-wrapper {
+    font-size: 18px;
+  }
+
+  // .page-title {
+  //   font-size: 48.78px;
+  // }
 }
