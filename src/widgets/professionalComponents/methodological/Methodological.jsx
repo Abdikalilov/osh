@@ -13,7 +13,7 @@ export const Methodological = () => {
     
     return (
         <div className="content-container">
-            <h1 className="page-title">методические пособии</h1>
+            <h1  className="page-title">методические пособии</h1>
             <div className="content-wrapper">
                 <ContentBlock content={content} />
             </div>
