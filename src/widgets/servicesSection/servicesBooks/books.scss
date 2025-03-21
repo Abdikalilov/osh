@@ -44,52 +44,8 @@
     padding: 10px;
 }
 
-
-
-
-@media screen and (max-width: 1400px) {
-    .container{
-        max-width: 1140px;
-    }
-    
-}
-
-@media screen and (max-width: 1200px) {
-    
-    
-
-
-}
-
-@media screen and (max-width: 992px) {
-    .container{
-        max-width: 720px;
-    }
-    .col-6{
-        width: 100%;
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container{
-        max-width: 540px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .container{
-        max-width: 100%;
-        padding: 0 10px;
-    }
-    
-}
-
 @media screen and (max-width: 326px) {
-    .container{
-        max-width: 100%;
-        padding: 0 10px;
-    }
+   
     .services_title{
         width: 220px;
         margin: 0 auto;

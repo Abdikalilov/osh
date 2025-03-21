@@ -1,6 +1,5 @@
-import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { GoArrowUpRight, GoArrowDownLeft } from "react-icons/go";
+import { GoArrowUpRight,  } from "react-icons/go";
 import './books.scss';
 
 const Books = ({ title, description, id, setVisible, isVisible }) => { 
