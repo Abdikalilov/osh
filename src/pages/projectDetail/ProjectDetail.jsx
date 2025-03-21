@@ -1,8 +1,11 @@
+import { OurProjectDetail } from "../../widgets"
 import "./projectDetail.scss"
 
 
 export const ProjectDetail = () => {
   return (
-    <div>ProjectDetail</div>
+    <div>
+      <OurProjectDetail/>
+    </div>
   )
 }

@@ -12,25 +12,27 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
-const DataProjects = [
+ export const DataProjects = [
   {
+    id:1,
     img: img4,
-    titlle: 'Читающий город',
+    title: 'Читающий город',
     description: 'Проект, направленный на развитие культуры чтения среди жителей. Организуем книжные выставки, литературные конкурсы, публичные чтения.'
   },
-  {
+  {id:2,
     img: img12,
-    titlle: 'Читающий город',
+    title: 'Читающий город',
     description: 'Проект, направленный на развитие культуры чтения среди жителей. Организуем книжные выставки, литературные конкурсы, публичные чтения.'
   },
   {
+    id:3,
     img: img9,
-    titlle: 'Образовательный центр',
+    title: 'Образовательный центр',
     description: 'Проект, направленный на развитие культуры чтения среди жителей. Организуем книжные выставки, литературные конкурсы, публичные чтения.'
   },
-  {
+  {id:4,
     img: img4,
-    titlle: 'Читающий город',
+    title: 'Читающий город',
     description: 'Проект, направленный на развитие культуры чтения среди жителей. Организуем книжные выставки, литературные конкурсы, публичные чтения.'
   },
 ]
@@ -85,9 +87,10 @@ export const AmericanCorner = () => {
       <div className={`projects-grid ${showAll ? 'show' : ''}`}>
         {DataProjects.map((item, index) => (
           <CardProjects
+            id={item.id}
             key={index}
             img={item.img}
-            title={item.titlle}
+            title={item.title}
             description={item.description}
           />
         ))}
@@ -98,7 +101,7 @@ export const AmericanCorner = () => {
             <SwiperSlide key={index}>
               <CardProjects
                 img={item.img}
-                title={item.titlle}
+                title={item.title}
                 description={item.description}
               />
             </SwiperSlide>
