@@ -1,28 +1,27 @@
 .card-partners {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 20px;
+  // padding: 20px;
   margin-top: 70px;
 
   h2 {
-    font-size: 32px;
-    font-weight: bold;
+    font-family: "Kino", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
     margin-bottom: 20px;
     text-align: left;
-    color: #105B60;
+    color: #105b60;
   }
-
-  .partners-card {
-    padding: 20px;
-    border-radius: 10px;
+  .row {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    
   }
-.card-partners__image {
-    width: 100%;
-    height: auto;
-    display: block;
+  .card-partners__image {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
   }
-  
 }
