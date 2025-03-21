@@ -14,10 +14,7 @@ export const AfishaDetailSection = () => {
 
   return (
 
-<div className='afishaDetail'>
-    <div className="container">
 
-    </div>
     <div className="afishaDetail">
         <div className="container">
              
@@ -47,6 +44,5 @@ export const AfishaDetailSection = () => {
             </div>
         </div>
     </div>
-</div>
   )
 }
