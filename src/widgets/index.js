@@ -47,3 +47,5 @@ export {NewsAdvertisment} from "./NewsPageComponents/NewsAdvertisment/NewsAdvert
 
 export {Rating} from './readerPageComponents/rating/Rating';
 export {OurProjectDetail} from './ourProjects/ourProjectDetail/OurProjectDetail';
+
+export { NewsDeteilSection } from './NewsPageComponents/NewsDeteil/NewsDeteilSection';
