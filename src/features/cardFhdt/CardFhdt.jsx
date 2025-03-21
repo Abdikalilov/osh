@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./CardFhdt.scss";
 
 export const  CardFhdt = () => {
@@ -21,6 +22,7 @@ export const  CardFhdt = () => {
         "Электронные и печатные каталоги содержат широкий выбор книг, научных изданий и цифровых ресурсов.",
       imgSrc: "https://natlibraryrm.ru/wp-content/uploads/2020/04/4860331.jpeg",
       alt: "Каталоги",
+      link: '/catalogs'
     },
     {
       title: "ЭЛЕКТРОННАЯ БИБЛИОТЕКА",
@@ -28,6 +30,7 @@ export const  CardFhdt = () => {
         "Доступ к тысячам электронных книг, научных публикаций и архивных документов в удобном формате.",
       imgSrc: "https://natlibraryrm.ru/wp-content/uploads/2020/04/4860331.jpeg",
       alt: "Электронная библиотека",
+      link: '/catalogs'
     },
   ];
 
@@ -54,7 +57,7 @@ export const  CardFhdt = () => {
                     }</p>
                   </div>
                   <div className="card-fhdt__card-content-right">
-                    <button className="card-fhdt__card-button">Подробнее</button>
+                    <Link to={item.link} className="card-fhdt__card-button">Подробнее</Link>
                   </div>
                 </div>
               </div>

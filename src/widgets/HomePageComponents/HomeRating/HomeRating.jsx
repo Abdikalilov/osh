@@ -36,7 +36,9 @@ export function HomeRating() {
               onClick={() => handleActivePeople(item.id)}
               className={`rating__card ${activePeople === item.id ? "rating__card--active" : ""}`}
             >
-              <img src={item.image} alt={item.name} className="rating__card-image" />
+              <div className="rating__card-image">
+              <img src={item.image} alt={item.name}  />
+              </div>
               <h3 className="rating__card-id">({item.id})</h3>
               <p className="rating__card-info">{item.name} {item.books}</p>
             </article>
@@ -51,7 +53,10 @@ export function HomeRating() {
               onClick={() => handleActiveBooks(item.id)}
               className={`rating__card ${activeBooks === item.id ? "rating__card--active" : ""}`}
             >
-              <img src={item.image} alt={item.title} className="rating__card-image" />
+              <div className="rating__card-image">
+              <img src={item.image} alt={item.title}  />
+         
+              </div>
               <h3 className="rating__card-id">({item.id})</h3>
               <div className="rating__card-content">
                 <p className="rating__card-title">{item.title}</p>

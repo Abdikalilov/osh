@@ -25,14 +25,22 @@
     &--active {
       width: 50%;
     }
-
-    &-image {
+    &-image{
       width: 100%;
       height: 300px;
-      object-fit: cover;
-      border: solid 15px #105b60;
+      // object-fit: cover;
+      // border: solid 15px #105b60;
+      background: #005f5f;
+      padding: 15px;
       border-radius: 15px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
+
+  
 
     &-id {
       font-family: "Kino", sans-serif;

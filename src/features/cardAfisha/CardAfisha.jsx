@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./CardAfisha.scss";
 
-export const CardAfisha = ({ image, title, date, description, tablet }) => {
+export const CardAfisha = ({id, image, title, date, description, tablet }) => {
   return (
     <div className="container-card__parent">
       <div className="container-card__parent-content">
@@ -25,7 +25,7 @@ export const CardAfisha = ({ image, title, date, description, tablet }) => {
         {description.substr(0, 110).trim() + '...' }
       </p>
       <button className="container-card__parent-btn">
-        <Link to={`/afisha-detail/${title}`}>Подробнее</Link>
+        <Link to={`/afisha-detail/${id}`}>Подробнее</Link>
       </button>
     </div>
   );
