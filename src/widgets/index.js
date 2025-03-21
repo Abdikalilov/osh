@@ -21,6 +21,7 @@ export { ProjectBanner } from './ourProjects/ProjectBanner/ProjectBanner';
 export { MainProjects } from './ourProjects/MainProject/MainProjects';
 export { AmericanCorner } from './ourProjects/AmericanCorner/AmericanCorner';
 
+
 export { SupportBanner } from './SupportPageComponents/SupportBanner/SupportBanner';
 export { SupportPartners } from './SupportPageComponents/SupportPartners/SupportPartners';
 export { SupportPayment } from './SupportPageComponents/SupportPayment/SupportPayment';
@@ -45,3 +46,4 @@ export { NewsBooksUpdate} from "./NewsPageComponents/NewsBooksUpdate/NewsBooksUp
 export {NewsAdvertisment} from "./NewsPageComponents/NewsAdvertisment/NewsAdvertisment"
 
 export {Rating} from './readerPageComponents/rating/Rating';
+export {OurProjectDetail} from './ourProjects/ourProjectDetail/OurProjectDetail';
