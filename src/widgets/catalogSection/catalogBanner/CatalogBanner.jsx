@@ -44,7 +44,7 @@ export  const CatalogBanner = () => {
                     </div>
                     <div className='book_btn'>
                         <button className='btn1'>читать</button>
-                        <button className='btn2'>скачать</button>
+                        <button  className='btn2' >скачать</button>
                     </div>
                 </div>
             ))}
