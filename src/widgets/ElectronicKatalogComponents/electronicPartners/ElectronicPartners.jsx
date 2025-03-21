@@ -6,7 +6,7 @@ export const ElectronicPartners = () => {
     return (
         <div>
             <div className="eletronic__sponsors">
-                <h1 className="sponsors_title">НАШИ ПАРТНЁРЫ, ГЛАВНЫЕ СПОНСОРЫ</h1>
+                <h1 className="sponsors_title">ПАРТНЁРЫ</h1>
                 <img className="sponsors_img" src={Sponsors} alt="" />
             </div>
         </div>

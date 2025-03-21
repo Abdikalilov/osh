@@ -23,15 +23,15 @@
     }
 
     .ellipseA {
-      width: 160px;
+      width: 144px;
       border-radius: 100%;
       position: absolute;
-      bottom: -80px;
+      bottom: -40px;
       left: 27%;
     }
 
     .ellipseB {
-      width: 120px;
+      width: 115px;
       border-radius: 100%;
       position: absolute;
       top: 60px;
@@ -39,11 +39,31 @@
     }
 
     .ellipseC {
-      width: 120px;
+      width: 115px;
       border-radius: 100%;
       position: absolute;
-      top: 30px;
+      top: 40px;
       left: 15%;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .rectangle__electronic-title {
+      font-size: 35px;
+    }
+
+    .ellipseA {
+      width: 105px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .rectangle__electronic-title {
+      font-size: 30px;
+    }
+
+    .ellipseA {
+      width: 105px;
     }
   }
 }
