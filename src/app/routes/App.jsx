@@ -108,7 +108,7 @@ function App() {
           <Route key={index} path={item.path} element={item.element} />
         ))}
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }

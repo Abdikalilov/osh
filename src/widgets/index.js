@@ -45,3 +45,5 @@ export { NewsBooksUpdate} from "./NewsPageComponents/NewsBooksUpdate/NewsBooksUp
 export {NewsAdvertisment} from "./NewsPageComponents/NewsAdvertisment/NewsAdvertisment"
 
 export {Rating} from './readerPageComponents/rating/Rating';
+
+export { NewsDeteilSection } from './NewsPageComponents/NewsDeteil/NewsDeteilSection';
