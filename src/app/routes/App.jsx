@@ -15,7 +15,6 @@ import {
   AboutPage,
   SupportPage,
   ElectronicPage,
-  ElectronicDetail,
   ProfessionalPage
 } from '../../pages';
 import { Footer, Header, Breadcrumb } from '../../widgets';
