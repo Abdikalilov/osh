@@ -1,4 +1,5 @@
-import { CardAdvertisment } from './../../../features/cardAdvertisment/cardAdvertisment';
+import { CardAfisha } from "../../../features/";
+
 export const NewsAdvertisment = ({title}) => {
 
     
@@ -44,7 +45,7 @@ const events = [
             <h1 className="cardAdvertisment__title">{title}</h1>
             <div className="cardAdvertisment__list">
                 {events.map((event, index) => (
-                    <CardAdvertisment
+                    <CardAfisha
                         key={index}
                         date={event.date} 
                         title={event.title} 
