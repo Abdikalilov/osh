@@ -4,7 +4,7 @@ import { ServicesBanner } from '../../widgets/servicesSection/servicesBanner/Ser
 import './servicesPage.scss'
 
 export const ServicesPage = () => {
-    const [isVisible, setVisible] = useState(null);
+    const [isVisible, setVisible] =   useState(null);
 
     const books = [
         {
