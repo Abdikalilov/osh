@@ -1,3 +1,4 @@
+import { CardBook } from "../../../features";
 import "./NewsBookUpdate.scss";
 
 export const NewsBooksUpdate = () => {
@@ -55,27 +56,13 @@ export const NewsBooksUpdate = () => {
           Обявление о поступление книг
         </div>
         {cards.map((card) => (
-          <div className="NewsBooksUpdate_card" key={card.id}>
-            <img className="NewsBooksUpdate_img" src={card.image} alt="" />
-            <div className="NewsBooksUpdate_info">
-              <div className="NewsBooksUpdate_info-textBlock">
-                <h2 className="NewsBooksUpdate_info-textBlock_info">
-                  📖 НАЗВАНИЕ КНИГИ: {card.title}{" "}
-                </h2>
-                <h4 className="NewsBooksUpdate_info-textBlock_author">
-                  ✍️ Автор: {card.author}{" "}
-                </h4>
-                <p className="NewsBooksUpdate_info-textBlock_description">
-                  <p>📜 Описание:</p> {card.description}{" "}
-                </p>
-              </div>
-              
-            </div>
-            <div className="NewsBooksUpdate_buttons">
-                <button className="NewsBooksUpdate_read">читать</button>
-                <button className="NewsBooksUpdate_download">скачать</button>
-              </div>
-          </div>
+          <CardBook key={card.id}
+            image={card.image}
+            author={card.author}
+            description={card.description}
+            title={card.title}
+
+          />
         ))}
       </div>
     </div>

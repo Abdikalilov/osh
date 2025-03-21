@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import './ElectronicSearch.scss';
+import { CardBook } from '../../../features';
 
 export const ElectronicSearch = () => {
 
@@ -72,45 +73,14 @@ export const ElectronicSearch = () => {
                 </div>
                 <div className="electronicSearch_info">
                     {filteredCards.map((card) => (
-                        <div className="electronicSearch_info_block" key={card.id}>
-                            <div className="desktop_view">
-                                <div className="electronicSearch_info_block_img">
-                                    <img src={card.image} alt="" />
-                                </div>
-                                <div className="electronicSearch_info_block_text">
-                                    <h2 className="electronicSearch_info_block_text_name">📖 НАЗВАНИЕ КНИГИ: {card.title}</h2>
-                                    <h4 className="electronicSearch_info_block_text_author">✍️ Автор: {card.author}</h4>
-                                    <p className="electronicSearch_info_block_text_description">
-                                        <span>📜 Описание:</span> {card.description}
-                                    </p>
-                                </div>
-                                <div className="electronicSearch_info_block_btn">
-                                    <button className="electronicSearch_info_block_btn_read">читать</button>
-                                    <button className="electronicSearch_info_block_btn_download">скачать</button>
-                                </div>
-                            </div>
+                       
+                        <CardBook key={card.id}
+                            image={card.image}
+                            author={card.author}
+                            description={card.description}
+                            title={card.title}
 
-                            <div className="mobile_view">
-                                    <div className="electronicSearch_info_block_top">
-                                        <div className="electronicSearch_info_block_img">
-
-                                            <img src={card.image} alt="" />
-                                        </div>
-
-                                        <div className="electronicSearch_info_block_text">
-                                            <h4 className="electronicSearch_info_block_text_author">✍️ Автор: {card.author}</h4>
-                                            <h2 className="electronicSearch_info_block_text_name">📖 НАЗВАНИЕ КНИГИ: {card.title}</h2>
-                                        </div>
-                                    </div>
-                                    <p className="electronicSearch_info_block_text_description">
-                                        <span>📜 Описание:</span> {card.description}
-                                    </p>
-                                    <div className="electronicSearch_info_block_btn">
-                                        <button className="electronicSearch_info_block_btn_read">читать</button>
-                                        <button className="electronicSearch_info_block_btn_download">скачать</button>
-                                    </div>
-                                </div>
-                            </div>
+                        />
                     ))}
                 </div>
             </div>

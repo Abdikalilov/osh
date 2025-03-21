@@ -24,7 +24,7 @@ export const Breadcrumb = ({ routes }) => {
   };
 
   return (
-    <nav className="breadcrumb container">
+    <nav className=" container breadcrumb">
       <Link to="/" className="breadcrumb__link">{t("ГЛАВНАЯ СТРАНИЦА")}</Link>
       {paths.length > 0 && <span className="breadcrumb__separator">{'>'}</span>}
       {paths.map((path, index) => {
