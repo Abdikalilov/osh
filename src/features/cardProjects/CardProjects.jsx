@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import "./cardProjects.scss"
 export const CardProjects = ({ img, title, description, id }) => {
-    
+
     console.log(id)
     return (
         <div>
@@ -10,8 +10,7 @@ export const CardProjects = ({ img, title, description, id }) => {
                 <h4><Link to={`/project-detail/${id}`}>{title}  </Link>
                 </h4>
                 <p>{description}</p>
-                <button className=""><Link to={`/project-detail/${id}`}>Подробнее</Link></button>
-                </div>
+            </div>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import { CardAfisha } from "../../../features/";
-
+import "./newsAdvertisment.scss";
 export const NewsAdvertisment = ({title}) => {
 
     
@@ -43,7 +43,7 @@ const events = [
     return (
         <div className="cardAdvertisment container">
             <h1 className="cardAdvertisment__title">{title}</h1>
-            <div className="cardAdvertisment__list">
+            {/* <div className="cardAdvertisment__list"> */}
                 {events.map((event, index) => (
                     <CardAfisha
                         key={index}
@@ -53,7 +53,7 @@ const events = [
                         description={event.description}
                     />
                 ))}
-            </div>
+            {/* </div> */}
         </div>
     );
 }
