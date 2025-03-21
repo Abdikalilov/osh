@@ -1,34 +1,69 @@
-import React from "react";
-import "./HomeBanner.scss";
-import libraryHomebanner from "../../../shared/libraryimg/libraryHomebanner.png";
-import libraryHomebanner2 from "../../../shared/libraryimg/libraryHomebanner2.png";
-import libraryHomebanner3 from "../../../shared/libraryimg/libraryHomebanner3.png";
-import libraryHomebanner4 from "../../../shared/libraryimg/libraryHomebanner4.png";
-import libraryHomebanner5 from "../../../shared/libraryimg/libraryHomebanner5.png";
+import image from '../../../shared/homeImages/image.png';
 
-export function HomeBanner  ()  {
-  return (
-    <div className="home-banner">
-      <div className="home-banner-images">
-        <img src={libraryHomebanner} alt="Library" className="home-banner-img home-banner-img1" />
-        <img src={libraryHomebanner2} alt="Reading" className="home-banner-img home-banner-img2" />
-        <img src={libraryHomebanner3} alt="Interior" className="home-banner-img home-banner-img3" />
-        <img src={libraryHomebanner4} alt="Browsing" className="home-banner-img home-banner-img4" />
-        <img src={libraryHomebanner5} alt="Bookshelf" className="home-banner-img home-banner-img5" />
-      </div>
-      <div className="home-banner-text">
-        <h1>ОТКРЫВАЙ КНИГУ – ОТКРЫВАЙ МИР</h1>
-        <p>
-          Добро пожаловать в библиотеку имени Токтогула Сатылганова – место, где книги
+import "./HomeBanner.scss";
+
+export function HomeBanner() {
+  const itemImage = [
+    {
+      id: 1,
+      image: image
+    },
+    {
+      id: 2,
+      image: image
+    },
+    {
+      id: 3,
+      image: image
+    },
+    {
+      id: 4,
+      image: image
+    },
+    {
+      id: 5,
+      image: image
+    },
+  ];
+
+  const itemTexts = [
+    {
+      id: 1,
+      title: 'ОТКРЫВАЙ КНИГУ – ОТКРЫВАЙ МИР',
+      description: `Добро пожаловать в библиотеку имени Токтогула Сатылганова – место, где книги
           открывают двери в мир знаний и вдохновения. Наш фонд включает разнообразную
           литературу – от классики до современных бестселлеров, а также электронные ресурсы
           для учебы и досуга. Мы создаем уютное пространство для чтения, развития и
           творчества, регулярно проводим лекции, мастер-классы и встречи с авторами. Каждая
           книга – это ключ к новым открытиям, и мы рады делиться ими с вами!
-        </p>
+          `
+    }
+  ]
+
+  return (
+    <div className="home-banner">
+      <div className="container">
+      <div className="home-banner-images">
+       {
+        itemImage.map((item) => (
+          <img key={item.id} src={item.image} alt="image" />
+        ))
+       }
+      </div>
+      <div className="home-banner-text">
+        {
+          itemTexts.map((item) => (
+            <div className='home-banner-text-block' key={item.id}>
+               <h1>{item.title}</h1>
+               <p>{item.description}</p>
+            </div>
+          ))
+        }
       </div>
     </div>
+    </div>
+
   );
-};
+}
 
 export default HomeBanner;

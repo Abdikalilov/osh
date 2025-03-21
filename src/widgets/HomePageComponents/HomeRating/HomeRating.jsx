@@ -1,4 +1,4 @@
-import React from "react";
+import  { useState } from "react";
 import "./HomeRating.scss";
 
 const readers = [
@@ -14,34 +14,55 @@ const books = [
 ];
 
 export function HomeRating() {
+  const [activePeople, setActivePeople] = useState("01");
+  const [activeBooks, setActiveBooks] = useState("01");
+
+  const handleActivePeople = (id) => {
+    setActivePeople(id);
+  };
+
+  const handleActiveBooks = (id) => {
+    setActiveBooks(id);
+  };
+
   return (
-    <div className="home-rating-container">
-      <h2 className="home-rating-title">Рейтинг читателей (ТОП-3)</h2>
-      <div className="home-rating-grid">
-        {readers.map((reader) => (
-          <div key={reader.id} className={`home-rating-card ${reader.id === "01" ? "home-rating-card--featured" : ""}`}>
-            <img src={reader.image} alt={reader.name} className="home-rating-image" />
-            <h3 className="home-rating-name">({reader.id})</h3>
-            <h4 className="home-rating-books">{reader.name} {reader.books} </h4>
-          </div>
-        ))}
-      </div>
-      <h2 className="home-rating-title">Рейтинг книг (ТОП-3)</h2>
-      <div className="home-rating-grid">
-        {books.map((book) => (
-          <div key={book.id} className={`home-rating-card ${book.id === "01" ? "home-rating-card--featured" : ""}`}>
-            <img src={book.image} alt={book.title} className="home-rating-image" />
-            <h3 className="home-rating-name">({book.id})</h3>
-            <div className="box" style={{display: 'flex', flexDirection: 'column'}}>
-              <h4>{book.title}</h4>
-              <h4>{book.author}</h4>
-              {/* <h4 className="home-rating-title-text">{book.title}</h4>
-              <h4 className="home-rating-author">{book.author}</h4> */}
-            </div>
-            <h4 className="home-rating-votes">{book.votes}</h4>
-          </div>
-        ))}
-      </div>
-    </div>
+    <main className="container">
+      <section className="rating">
+        <h2 className="rating__title">Рейтинг читателей (ТОП-3)</h2>
+        <div className="rating__grid">
+          {readers.map((item) => (
+            <article
+              key={item.id}
+              onClick={() => handleActivePeople(item.id)}
+              className={`rating__card ${activePeople === item.id ? "rating__card--active" : ""}`}
+            >
+              <img src={item.image} alt={item.name} className="rating__card-image" />
+              <h3 className="rating__card-id">({item.id})</h3>
+              <p className="rating__card-info">{item.name} {item.books}</p>
+            </article>
+          ))}
+        </div>
+
+        <h2 className="rating__title">Рейтинг книг (ТОП-3)</h2>
+        <div className="rating__grid">
+          {books.map((item) => (
+            <article
+              key={item.id}
+              onClick={() => handleActiveBooks(item.id)}
+              className={`rating__card ${activeBooks === item.id ? "rating__card--active" : ""}`}
+            >
+              <img src={item.image} alt={item.title} className="rating__card-image" />
+              <h3 className="rating__card-id">({item.id})</h3>
+              <div className="rating__card-content">
+                <p className="rating__card-title">{item.title}</p>
+                <p className="rating__card-author">{item.author}</p>
+              </div>
+              <p className="rating__card-votes">{item.votes}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
+
   );
 }

@@ -1,6 +1,6 @@
 import { CardAfisha } from '../../../features';
 import './afishaEvent.scss';
-export const AfishaEvent = () => {
+export const AfishaEvent = ({tablet, mobile}) => {
 
 
   const events = [
@@ -41,11 +41,13 @@ export const AfishaEvent = () => {
     },
   ];
   return (
-    <div className="card-afisha">
-      <h1 className="card-afisha__title">АФИША МЕРОПРИЯТИЙ</h1>
+    <div className='container'>
+        <h1 className="card-afisha__title">АФИША МЕРОПРИЯТИЙ</h1>
       <div className="card-afisha__list">
         {events.map((event, index) => (
           <CardAfisha
+          tablet={tablet}
+          mobile={mobile}
             key={index}
             date={event.date}
             title={event.title}
@@ -55,6 +57,7 @@ export const AfishaEvent = () => {
         ))}
       </div>
     </div>
+  
   );
 }
 
