@@ -9,15 +9,16 @@
     padding: 20px;
     font-family: 'Kino', sans-serif;
     display: flex;
-    align-items: center;
+    // align-items: center;
     flex-direction: column;
     justify-content: space-between;
 
     &_imge{
         display: none;
+        width: 100%;
     }
 
-    h1 {
+    &_text {
         font-size: 30px;
         font-weight: 900;
         width: 100%;
@@ -25,11 +26,11 @@
         font-family: "Kino", sans-serif;
     }
 
-    p {
+    &_dispatch{
         color: #FFFFFF;
-        width: 60%;
-        margin-right: 500px;
-        font-size: 13px;
+        font-weight: 400;
+        width:65%;
+        padding: 10px;
         font-family: "SF Pro Display" sans-serif;
     }
 }
