@@ -87,11 +87,6 @@ export const routesArr = [
     element: <ElectronicPage />
   },
   {
-    path: '/electronic-detail/:id',
-    title: "Электронная библиотека",
-    element: <ElectronicDetail />
-  },
-  {
     path: '/professional',
     title: "Профисионалная деятелность",
     element: <ProfessionalPage />
@@ -108,7 +103,7 @@ function App() {
           <Route key={index} path={item.path} element={item.element} />
         ))}
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }

@@ -30,7 +30,7 @@ export const  CardFhdt = () => {
         "Доступ к тысячам электронных книг, научных публикаций и архивных документов в удобном формате.",
       imgSrc: "https://natlibraryrm.ru/wp-content/uploads/2020/04/4860331.jpeg",
       alt: "Электронная библиотека",
-      link: '/catalogs'
+      link: '/electronic'
     },
   ];
 
