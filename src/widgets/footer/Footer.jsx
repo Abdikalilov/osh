@@ -90,15 +90,15 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        {/* <div className="footer_bottom">
+        <div className="footer_bottom">
             <p>© 2025 Название библиотеки . Все права защищены.</p>
             <a href="https://geeks.kg/geeks-pro">MADE BY GEEKSPRO</a>
             <div className="footer_views">
               <img src={Akar} alt="" className="footer_views_akar" />
               <img src={Rectangle} alt="" />
               <div>
-                <div className="img">
-                  <div>
+                 <div className="img">
+                  <div >
                   <FaRegEye />
                     <p>5930</p>
                   </div>
@@ -112,9 +112,9 @@ export const Footer = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> 
             <p>Политика конфидециональнности</p>
-          </div> */}
+          </div>
 
       </div>
     </div>
