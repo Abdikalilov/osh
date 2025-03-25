@@ -15,7 +15,7 @@ const Books = ({ title, description, id, setVisible, isVisible }) => {
                     width: 1319,
                     padding: '1.2rem',
                 }} 
-                className='container books-enemy'
+                className='container services_books-enemy'
             >
                 <div className=' container services_title_block'> 
                     <div>
@@ -41,7 +41,7 @@ const Books = ({ title, description, id, setVisible, isVisible }) => {
                 {isOpen && (
                     <motion.div 
                     onClick={() => setVisible(isOpen ? null : id)}
-                        className='container block'
+                        className='container services_block'
                         initial={{ height: 0 }}  
                         animate={{ height: 'auto' }}    
                         exit={{ height: 0 }} 

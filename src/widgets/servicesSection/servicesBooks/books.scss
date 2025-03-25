@@ -1,12 +1,10 @@
-.books-enemy {
-
+.services_books-enemy{
+border-radius: 12px 12px 12px 12px;
     margin-top: 20px;
     color: aliceblue;
 }
 
-.books-enemy {
-    border-radius: 12px 12px 12px 12px;
-}
+ 
 
 .services_btn {
     background-color: #105B60;
@@ -30,9 +28,9 @@
 }
 
 .services_title {
-    width: 260px;
+    max-width: 260px;
     margin: 0 auto;
-
+    
 }
 
 
@@ -91,6 +89,14 @@
     }
 
 }
+@media screen and (max-width: 375px) {
+    .services_title {
+        width: 210px;
+        margin: 0 auto;
+        font-size:15px;
+
+    }
+}
 
 @media screen and (max-width: 326px) {
     .container {
@@ -98,9 +104,11 @@
         padding: 0 10px;
     }
 
+
     .services_title {
-        width: 220px;
+        width: 210px;
         margin: 0 auto;
+        font-size:15px;
 
     }
 
