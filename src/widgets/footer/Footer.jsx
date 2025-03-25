@@ -28,28 +28,28 @@ export const Footer = () => {
   };
 
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="container">
         <div className="footer_top">
-        <div className="footer_top_logo">
-              <img className="footer_top_logo_img" src={Logo} alt="" />
-              <a className="footer_top_logo_adres" href="https://2gis.kg/osh/firm/70000001030596097">Адресc: ПКурманжан датка,272/1</a>
-              <p>Телефон: +996 557 01 63 44</p>
-              <div className="footer_top_logo_social">
-                <div className="footer_top_logo_social_bloc">
-                  <FaInstagram color="#105B60" />
-                </div>
-                <div className="footer_top_logo_social_bloc">
-                  <CiFacebook color="#105B60" />
-                </div>
-                <div className="footer_top_logo_social_bloc">
-                  <FaYoutube color="#105B60" />
-                </div>
-                <div className="footer_top_logo_social_bloc">
-                  <FaGoogle color="#105B60" />
-                </div>
+          <div className="footer_top_logo">
+            <img className="footer_top_logo_img" src={Logo} alt="" />
+            <a className="footer_top_logo_adres" href="https://2gis.kg/osh/firm/70000001030596097">Адресc: ПКурманжан датка,272/1</a>
+            <p>Телефон: +996 557 01 63 44</p>
+            <div className="footer_top_logo_social">
+              <div className="footer_top_logo_social_bloc">
+                <FaInstagram color="#105B60" />
+              </div>
+              <div className="footer_top_logo_social_bloc">
+                <CiFacebook color="#105B60" />
+              </div>
+              <div className="footer_top_logo_social_bloc">
+                <FaYoutube color="#105B60" />
+              </div>
+              <div className="footer_top_logo_social_bloc">
+                <FaGoogle color="#105B60" />
               </div>
             </div>
+          </div>
 
 
           <div className="footer_sections">
@@ -90,33 +90,37 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="footer_bottom">
-            <p>© 2025 Название библиотеки . Все права защищены.</p>
+        {/* <div className="footer_bottom">
+          <p>© 2025 Название библиотеки . Все права защищены.</p>
+          <div className="footer_bottom_grupa">
+
+
             <a href="https://geeks.kg/geeks-pro">MADE BY GEEKSPRO</a>
-            <div className="footer_views">
-              <img src={Akar} alt="" className="footer_views_akar" />
-              <img src={Rectangle} alt="" />
-              <div>
-                 <div className="img">
-                  <div >
-                  <FaRegEye />
-                    <p>5930</p>
-                  </div>
-                  <div>
-                  <IoExit />
-                    <p>3369</p>
-                  </div>
-                  <div>
-                  <IoMdPeople />
-                    <p>2435</p>
+              <div className="footer_views">
+                <img src={Akar} alt="" className="footer_views_akar" />
+                <img src={Rectangle} alt="" />
+                <div>
+                  <div className="img">
+                    <div >
+                      <FaRegEye />
+                      <p>5930</p>
+                    </div>
+                    <div>
+                      <IoExit />
+                      <p>3369</p>
+                    </div>
+                    <div>
+                      <IoMdPeople />
+                      <p>2435</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div> 
-            <p>Политика конфидециональнности</p>
           </div>
+          <p>Политика конфидециональнности</p>
+        </div> */}
 
       </div>
-    </div>
+    </footer>
   );
 };

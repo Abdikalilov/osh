@@ -50,4 +50,4 @@ const Lang = () => {
   )
 }
 
-export default Lang
+export default Lang;

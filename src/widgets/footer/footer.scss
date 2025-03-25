@@ -1,10 +1,11 @@
 .footer {
+  margin-top: 100px;
   background: #105B60;
   color: #fff;
   padding: 99px 60px 50px 60px;
   margin-top: 150px;
   font-family: "SF Pro Display", sans-serif;
-  
+
   &_top {
     display: flex;
     align-items: flex-start;
@@ -133,9 +134,14 @@
         div p {
           font-family: "Kino", sans-serif;
           font-weight: 400;
-          // font-size: .06px;
           line-height: 100%;
           letter-spacing: 0%;
+          font-family: Roboto;
+          font-weight: 400;
+          font-size: 13.5px;
+          line-height: 100%;
+          letter-spacing: 0%;
+
 
         }
 
@@ -268,7 +274,7 @@
 
         .footer_section {
           .footer_section_title {
-            font-size: 18px;
+            font-size: 14px;
 
             .chevron {
               display: block;
