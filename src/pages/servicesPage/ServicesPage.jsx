@@ -1,7 +1,8 @@
-import { useState } from 'react';
+
 import Books from '../../widgets/servicesSection/servicesBooks/Books';
 import { ServicesBanner } from '../../widgets/servicesSection/servicesBanner/ServicesBanner';
 import './servicesPage.scss'
+import { useState } from 'react';
 
 export const ServicesPage = () => {
     const [isVisible, setVisible] = useState(null);
