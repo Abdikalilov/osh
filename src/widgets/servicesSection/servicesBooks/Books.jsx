@@ -17,7 +17,7 @@ const Books = ({ title, description, id, setVisible, isVisible }) => {
                 }} 
                 className='container books-enemy'
             >
-                <div className='services_title_block'> 
+                <div className=' container services_title_block'> 
                     <div>
                         <h3 className='services_id'>{id}/ </h3>
                     </div>  
@@ -40,15 +40,18 @@ const Books = ({ title, description, id, setVisible, isVisible }) => {
             <AnimatePresence mode="wait">       
                 {isOpen && (
                     <motion.div 
+                    onClick={() => setVisible(isOpen ? null : id)}
                         className='container block'
-                        initial={{ height: 0, opacity: 0 }}  
-                        animate={{ height: 'auto', opacity: 1 }}    
-                        exit={{ height: 0, opacity: 0 }} 
+                        initial={{ height: 0 }}  
+                        animate={{ height: 'auto' }}    
+                        exit={{ height: 0 }} 
+                        style={{overflow: 'hidden'}}
                         transition={{ duration: 0.3 }} 
                     >
-                        <div className='services-img'></div>
+                        <div className='services-img '  onClick={() => setVisible(isOpen ? null : id)}></div>
+                        
                         <div>
-                            <p className='services-text'>{description}</p>
+                            <p   onClick={() => setVisible(isOpen ? null : id)} className='services-text'>{description}</p>
                         </div>
                     </motion.div>
                 )}
