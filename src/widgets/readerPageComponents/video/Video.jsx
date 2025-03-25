@@ -1,18 +1,25 @@
 import './video.scss'
-import img1 from '../../../shared/images/image.png'
-import img2 from '../../../shared/images/Frame.png'
+import ReactPlayer from "react-player";
+
 
   
-
 export  const Video = () => {
     return (
-        <div className='zaly-cont'>
+        <div className='video container'>
 
-        <div className='zaly'>   
-            <h1 className='zaly-text1'>Читательные залы</h1>
-            <img className='zaly-img2' src={img2} alt="" />
-            <img className='zaly-img' src={img1} alt="" />
-        </div>
+            <h1 className='video-text1'>Читательные залы</h1>
+
+              
+                <div className='video-player'>
+                <ReactPlayer 
+                        url="https://www.youtube.com/watch?v=sYiv9UEa4pI" 
+                        controls 
+                        width="100%" 
+                        height="100%"
+                    />
+                </div>
+                    
+    
     </div>
     );
 }

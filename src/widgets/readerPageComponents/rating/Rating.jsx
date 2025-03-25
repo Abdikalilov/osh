@@ -1,178 +1,131 @@
-import './rating.scss'
-import img from '../../../shared/images/image(1).png'
-import img2 from '../../../shared/images/image(2).png'
-
-// import { Swiper, SwiperSlide } from "swiper/react";
-
+import './rating.scss';
+import img from '../../../shared/images/image(1).png';
+import img2 from '../../../shared/images/image(2).png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/scss';
 
 export const Rating = () => {
- 
     const newsItems = [
-  {
-    date: "(01)",
-    date2: "(2)",
-    date3: "(3)",
-    date4: "(4)",
-    title: "Иван Иванов (75 книг за месяц).",
-  }
+        { date: "(01)", title: "Иван Иванов (75 книг за месяц)." },
+        { date: "(02)", title: "Иван Иванов (75 книг за месяц)." },
+        { date: "(03)", title: "Иван Иванов (75 книг за месяц)." },
+        { date: "(04)", title: "Иван Иванов (75 книг за месяц)." },
+        { date: "(05)", title: "Иван Иванов (75 книг за месяц)." },
+        { date: "(06)", title: "Иван Иванов (75 книг за месяц)." },
+    ];
 
-];
-
-const Items = [
-  {
-    data: "(01)",
-    data2: "(2)",
-    data3: "(3)",
-    data4: "(4)",
-    title1: 'Книга: "История цивилизаций". Автор: Джон Доу.',
-    take: 'Код цивилизаций" — 500 прочтений'
-  } 
-]
+    const books = [
+        {
+            date: "(01)",
+            title: 'Книга: "История цивилизаций". Автор: Джон Доу.',
+            take: 'Код цивилизаций" — 500 прочтений'
+        },
+        {
+            date: "(02)",
+           title: 'Книга: "История цивилизаций". Автор: Джон Доу.',
+            take: 'Код цивилизаций" — 500 прочтений'
+        },
+        {
+            date: "(03)",
+            title: 'Книга: "История цивилизаций". Автор: Джон Доу.',
+            take: 'Код цивилизаций" — 500 прочтений'
+        },
+        {
+            date: "(04)",
+            title: 'Книга: "История цивилизаций". Автор: Джон Доу.',
+            take: 'Код цивилизаций" — 500 прочтений'
+        },
+        {
+          date: "(05)",
+          title: 'Книга: "История цивилизаций". Автор: Джон Доу.',
+          take: 'Код цивилизаций" — 500 прочтений'
+        },
+        {
+          date: "(06)",
+          title: 'Книга: "История цивилизаций". Автор: Джон Доу.',
+          take: 'Код цивилизаций" — 500 прочтений'
+       }
+    ];
 
     return (
-        <div className='rating'>
-          <div>
-            
-          </div>
+        <div className='rating container'>
+            <h1 className='rating-text1'>Рейтинг читателей (топ-10)</h1>
+            <br />
 
-      <h1 className='rating-text1'>Рейтинг  читателей(топ-10)</h1>
-              <br />
-          <div className='rating-div'>
-             <div className="rating-row">
-               <img className='rating-img' src={img} alt="" />
-    
-              {newsItems.map((news, index) => (
-              <div className="rating-col" key={index}>
-                    <span className="rating-date">{news.date}</span>
-                    <h3 className='rating-title'>{news.title}</h3>
-                </div>
-         ))}
-    </div> 
-             <div className="rating-row2">
-    <img className='rating-img' src={img} alt="" />
-    
-              {newsItems.map((news, index) => (
-              <div className="rating-col" key={index}>
-                    <span className="rating-date">{news.date2}</span>
-                    <h3 className='rating-title'>{news.title}</h3>
-                </div>
-         ))}
-    </div>
-    
-    <div className="rating-row3">
-    <img className='rating-img' src={img} alt="" />
-    
-              {newsItems.map((news, index) => (
-              <div className="rating-col" key={index}>
-                    <span className="rating-date">{news.date3}</span>
-                    <h3 className='rating-title'>{news.title}</h3>
-                </div>
-         ))}
-    </div>
-    
-    
-    <div className="rating-row4">
-    <img className='rating-img' src={img} alt="" />
-    
-              {newsItems.map((news, index) => (
-              <div className="rating-col" key={index}>
-                    <span className="rating-date">{news.date4}</span>
-                    <h3 className='rating-title'>{news.title}</h3>
-                </div>
-         ))}
-          </div>
-           
-</div>
+            <Swiper 
+            spaceBetween={20} 
+            slidesPerView={3.5} 
+            grabCursor={true}
+            breakpoints={{
+              1200: { slidesPerView:3.5},
+              992: { slidesPerView: 3},
+              890: { slidesPerView: 2.3, 
+                   spaceBetween:50
+              },
+         
+              670: { slidesPerView: 1.7},
+              570: { slidesPerView: 1.8},
+              450: { slidesPerView: 1.3} ,
+              350: { slidesPerView: 1.1},
+              250: { slidesPerView: 1} ,
+              150: { slidesPerView: 1} ,
+              50: { slidesPerView: 1} 
+              
+            }}
+             >
+                {newsItems.map((news, index) => (
+                    <SwiperSlide key={index}>
+                        <div className="rating-row">
+                            <img className="rating-img" src={img} alt="" />
+                            <div className='rating-col'>
+                                <span className="rating-date">{news.date}</span>
+                                <h3 className="rating-title">{news.title}</h3>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
 
-<br />
-<br />
+            <br /><br />
+            <h1 className='rating-text2'>Рейтинг книг (топ-10)</h1>
+            <br />
 
-<h1 className='rating-text2'>Рейтинг книг(топ-10)</h1>
-       <br />
-<div className='rating-div2'>
+            <Swiper 
+            spaceBetween={20} 
+            slidesPerView={3.5}  
+            grabCursor={true}
+            breakpoints={{
+                1200: { slidesPerView:3.5},
+                992: { slidesPerView: 3},
+                890: { slidesPerView: 2.3, 
+                     spaceBetween:50
+                },
+                // 865: { slidesPerView: 1} ,
+                // 770: { slidesPerView: 2 } ,
+                670: { slidesPerView: 1.7},
+                570: { slidesPerView: 1.8},
+                450: { slidesPerView: 1.3} ,
+                350: { slidesPerView: 1.1},
+                250: { slidesPerView: 1} ,
+                150: { slidesPerView: 1} ,
+                50: { slidesPerView: 1} 
 
-         <div className="rating-box">
-           <img className='rating-img2' src={img2} alt="" />
-
-          {Items.map((items, index) => (
-          <div className="rating-col-1" key={index}>
-                <span className="rating-data">{items.data}</span>
-                <h3 className='rating-title1'>{items.title1}</h3>
-                <br />
-                <h3 className='rating-take'>{items.take}</h3>
-            </div>
-     ))}
-</div>
-
-         <div className="rating-box2">
-           <img className='rating-img2' src={img2} alt="" />
-
-          {Items.map((items, index) => (
-          <div className="rating-col-1" key={index}>
-                <span className="rating-data">{items.data2}</span>
-                <h3 className='rating-title1'>{items.title1}</h3>
-                <br />
-                <h3 className='rating-take'>{items.take}</h3>
-            </div>
-     ))}
-</div>
-
-         <div className="rating-box3">
-           <img className='rating-img2' src={img2} alt="" />
-
-          {Items.map((items, index) => (
-          <div className="rating-col-1" key={index}>
-                <span className="rating-data">{items.data3}</span>
-                <h3 className='rating-title1'>{items.title1}</h3>
-                <br />
-                <h3 className='rating-take'>{items.take}</h3>
-            </div>
-     ))}
-</div>
-
-         <div className="rating-box4">
-           <img className='rating-img2' src={img2} alt="" />
-
-          {Items.map((items, index) => (
-          <div className="rating-col-1" key={index}>
-                <span className="rating-data">{items.data4}</span>
-                <h3 className='rating-title1'>{items.title1}</h3>
-                <br />
-                <h3 className='rating-take'>{items.take}</h3>
-            </div>
-     ))}
-</div>
-</div>
-
-     
-
+            }}
+            >
+                {books.map((book, index) => (
+                    <SwiperSlide key={index}>
+                        <div className="rating-box">
+                            <img className='rating-img2' src={img2} alt="" />
+                            <div className="rating-col-1">
+                                <span className="rating-data">{book.date}</span>
+                                <h3 className='rating-title1'>{book.title}</h3>
+                                <br />
+                                <h3 className='rating-take'>{book.take}</h3>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
         </div>
     );
-}
-
-
-
-
-
-
-    // const images = [
-    //   { id: 1, src: img, name: "Иван Иванов", books: 75 },
-    //   { id: 2, src: img, name: "Петр Петров", books: 60 },
-    //   { id: 3, src: img, name: "Анна Смирнова", books: 90 },
-    // ];
-    
-    //   return (
-    //     <Swiper spaceBetween={20} slidesPerView={3} direction='horizontal'>
-    //       {images.map((item) => (
-    //         <SwiperSlide key={item.id}>
-    //           <div className="card">
-    //             <img src={item.src} alt={item.name} />
-    //             <p>({item.id.toString().padStart(2, "0")})</p>
-    //             <p>{item.name} ({item.books} книг за месяц)</p>
-    //           </div>
-    //         </SwiperSlide>
-    //       ))}
-    //     </Swiper>
-    //   );
-    // }
-
+};

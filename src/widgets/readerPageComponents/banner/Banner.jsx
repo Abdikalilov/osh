@@ -4,9 +4,8 @@ import img from '../../../shared/images/Rectangle.png'
 export const Banner = () => {
     return (
         <div className="banner container">
-             <div className='banner-cont'>
 
-               
+          <div className="banner-row">
              <h1 className='banner-text1'>История, которая продолжает жить веками</h1>
  
              <p className='banner-text2'>Библиотека имени Токтогула Сатылганова – это 
@@ -18,9 +17,10 @@ export const Banner = () => {
 
              <button className='banner-btn'>Подробнее</button>
 
+            </div> 
+
              <img className='banner-img' src={img} alt="" />
 
-             </div>
         </div>
 
       

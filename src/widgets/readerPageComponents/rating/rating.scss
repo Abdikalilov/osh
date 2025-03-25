@@ -1,38 +1,22 @@
 .rating{
-    margin-top: -40px;
-   
-
-    &-div{ 
-        display: flex;
-    }
+    margin-top: 100px;
 
     &-text1{
-        margin-top: 0px;
-        margin-left: 0px;
+       
         color: #105B60;
         font-size: 44px;
 
     }
     &-date{
         font-size: 44px;
+        color: #105B60;
+        
     }
     &-title{
         font-size: 22px;
         width: 325px;
         color: #105B60;
     }
-    
-    &-row2{
-        margin-left: 10px;
-    }
-  
-    &-row3{
-        margin-left: 10px;
-    }
-    &-row4{
-        margin-left: 10px;
-    }
-
 
     &-img{
         width: 315px;
@@ -47,28 +31,20 @@
     }
     &-data{
         font-size: 44px;
+        color: #105B60;
+        
     }
     &-title1{
         font-size: 22px;
         width: 400px;
         color: #105B60;
     }
+   
     
-    &-box2{
-        margin-left: -65px;
-    }
-    &-box3{
-        margin-left: -65px;
-    }
-    &-box4{
-        margin-left: -65px;
-    }
     &-img2{
         width: 315px;
     }
-    &-div2{
-        display: flex;
-    }
+   
     &-take{
         color: #105B60;
     }
@@ -76,26 +52,17 @@
 }
 
 
+// @media screen and (max-width: 1200px) {
+//      .rating{
+//         max-width: 960px;
+//         .rating-box{
+//         //    justify-content: space-between;
+//         }
+//      }
+// }
 
-// .card {
-//     // text-align: center;
-//     // border: 3px solid #00a2ff;
-//     border-radius: 10px;
-//     padding: 10px;
-//   }
-  
-//   .card img {
-//     width: 100%;
-//     height: auto;
-//     border-radius: 5px;
-//   }
-//   .swiper {
-//     width: 100%;
-//     overflow: hidden;
-//   }
-  
-//   .swiper-slide {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
+@media screen and (max-width: 992px) {
+    .rating{
+        width: 100%;
+    }
+}
