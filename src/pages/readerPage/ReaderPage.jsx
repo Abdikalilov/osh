@@ -1,6 +1,14 @@
-import "./readerPage.scss"
+import { Banner, Catalog, Graphik, Rating, Video } from "../../widgets";
+
+
 export const ReaderPage = () => {
   return (
-    <div>ReaderPage</div>
+    <div>
+       <Banner />
+       <Graphik />
+       <Video />
+       <Catalog />
+       <Rating />
+    </div>
   )
 }

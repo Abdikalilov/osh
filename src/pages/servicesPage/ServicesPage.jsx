@@ -30,12 +30,12 @@ export const ServicesPage = () => {
         },
     ]
     return (
-        <div className='container'>
+        <div className='container '   >
             <ServicesBanner/>
 
             <p className='servicestext'>основные услуги</p>
 
-            <div className='servicesblock' >
+            <div className='servicesblock'   >
                 {
                     books && 
                     books.map((book) => (

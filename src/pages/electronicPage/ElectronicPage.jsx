@@ -1,6 +1,12 @@
-import "./electronicPage.scss"
+import { ElectronicBanner, ElectronicPartners, ElectronicSearch } from "../../widgets";
+import "./electronicPage.scss";
+
 export const ElectronicPage = () => {
   return (
-    <div>ElectronicPage</div>
+    <div className="container">
+      <ElectronicBanner/>
+      <ElectronicSearch/>
+      <ElectronicPartners/>
+    </div>
   )
 }

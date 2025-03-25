@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import '../styles/app.scss';
-import { 
+import {
   HomePage,
   AfishaPage,
   AfishaDetail,
@@ -14,70 +15,79 @@ import {
   AboutPage,
   SupportPage,
   ElectronicPage,
-  ElectronicDetail,
   ProfessionalPage
-} from '../../pages'; 
+} from '../../pages';
 import { Footer, Header, Breadcrumb } from '../../widgets';
 
-const routesArr = [
+export const routesArr = [
   {
     path: '/',
+    title: "Главная",
     element: <HomePage />
   },
   {
     path: '/afisha',
+    title: "Афиша мероприятий",
     element: <AfishaPage />
   },
   {
     path: '/afisha-detail/:id',
+    title: "Афиша мероприятий",
     element: <AfishaDetail />
   },
   {
     path: '/services',
+    title: "Услуги",
     element: <ServicesPage />
   },
   {
     path: '/project',
+    title: "Наши проекты",
     element: <ProjectPage />
   },
   {
     path: '/project-detail/:id',
+    title: "Детали проекта",
     element: <ProjectDetail />
   },
   {
     path: '/news',
+    title: "Новости",
     element: <NewsPage />
   },
   {
     path: '/news-detail/:id',
+    title: "Новости",
     element: <NewsDetail />
   },
   {
     path: '/catalog',
+    title: "Каталог",
     element: <CatalogPage />
   },
   {
     path: '/reader',
+    title: "Читателям",
     element: <ReaderPage />
   },
   {
     path: '/about',
+    title: "О библиотеки",
     element: <AboutPage />
   },
   {
     path: '/support',
+    title: "Поддержать библеотеку",
     element: <SupportPage />
   },
   {
     path: '/electronic',
+    title: "Электронная библиотека",
     element: <ElectronicPage />
   },
   {
-    path: '/electronic-detail/:id',
-    element: <ElectronicDetail />
-  },
-  {
     path: '/professional',
+    title: "Профисионалная деятелность",
     element: <ProfessionalPage />
   },
 ];
@@ -85,8 +95,8 @@ const routesArr = [
 function App() {
   return (
     <BrowserRouter>
-      <Header /> 
-      <Breadcrumb />
+      <Header />
+      <Breadcrumb routes={routesArr} />
       <Routes>
         {routesArr.map((item, index) => (
           <Route key={index} path={item.path} element={item.element} />

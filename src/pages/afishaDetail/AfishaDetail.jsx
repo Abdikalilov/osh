@@ -1,7 +1,10 @@
-import React from 'react'
+import { AfishaDetailSection } from "../../widgets";
 
 export const AfishaDetail = () => {
-  return (
-    <div>AfishaDetail</div>
-  )
+    return (
+        <div>
+            <AfishaDetailSection />
+        </div>
+    );
 }
+

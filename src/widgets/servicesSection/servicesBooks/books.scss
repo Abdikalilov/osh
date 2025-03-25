@@ -1,10 +1,9 @@
-.services_books-enemy{
-border-radius: 12px 12px 12px 12px;
+.services_books-enemy {
+    border-radius: 12px 12px 12px 12px;
     margin-top: 20px;
     color: aliceblue;
+    transition: none !important; 
 }
-
- 
 
 .services_btn {
     background-color: #105B60;
@@ -14,25 +13,23 @@ border-radius: 12px 12px 12px 12px;
     font-size: 25px;
 }
 
-
 .services_title_block {
     display: flex;
     justify-content: space-between;
-
-
 }
 
 .services_id {
     font-size: 20px;
-
 }
 
 .services_title {
     max-width: 260px;
     margin: 0 auto;
-    
 }
 
+.services_block {
+    transition: none !important; 
+}
 
 .services-text {
     width: 70%;
@@ -41,77 +38,26 @@ border-radius: 12px 12px 12px 12px;
     align-items: center;
     margin: 0 auto;
     padding: 10px;
-
-
 }
 
-
-@media screen and (min-width: 1400px) {
-    .container {
-        max-width: 1140px;
-    }
-
-    // .block{
-    //     width: 99.9px;
-    // }
-}
-
-@media screen and (max-width: 1400px) {
-    .container {
-        max-width: 1140px;
-    }
-
-}
-
-@media screen and (max-width: 1200px) {}
-
-@media screen and (max-width: 992px) {
-    .container {
-        max-width: 720px;
-    }
-
-    .col-6 {
-        width: 100%;
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .container {
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
-}
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1450px) {
     .services_title {
-        width: 210px;
+         
         margin: 0 auto;
-        font-size:15px;
-
+         
     }
+    
+     
 }
 
-@media screen and (max-width: 326px) {
-    .container {
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
+@media screen and (max-width: 380px) {
 
     .services_title {
-        width: 210px;
+        width: 220px;
         margin: 0 auto;
-        font-size:15px;
-
+        font-size: 15px;
     }
-
-
-
+    .services_block {
+        width: 200000%;
+    }
 }

@@ -1,7 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import countReducer from "./reducers/count";
+import visuallyReducer from "./reducers/visually";
+import { settingReducer } from "./reducers/settingsSlice";
+
 export const store = configureStore({
-  reducer: {
-    count: countReducer,
-  },
+    reducer: {
+        visually: visuallyReducer,
+        settings: settingReducer,
+    },
 });

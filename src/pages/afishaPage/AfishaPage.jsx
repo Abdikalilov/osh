@@ -1,6 +1,11 @@
+import { AfishaEvents ,AfishaBanner } from "../../widgets"
 import "./afishaPage.scss"
 export const AfishaPage = () => {
   return (
-    <div>AfishaPage</div>
+    <div>
+      <AfishaBanner />
+      <AfishaEvents />
+
+    </div>
   )
 }

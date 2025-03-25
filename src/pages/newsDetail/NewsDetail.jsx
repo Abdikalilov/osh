@@ -1,7 +1,11 @@
 import React from 'react'
+import { NewsDeteilSection } from '../../widgets'
 
 export const NewsDetail = () => {
   return (
-    <div>NewsDetail</div>
+    <div>
+
+      <NewsDeteilSection />
+    </div>
   )
 }
