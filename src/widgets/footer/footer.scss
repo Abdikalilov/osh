@@ -6,6 +6,7 @@
   margin-top: 150px;
   font-family: "SF Pro Display", sans-serif;
 
+  
   &_top {
     display: flex;
     align-items: flex-start;
@@ -96,6 +97,15 @@
     justify-content: space-between;
     padding: 22px 0;
 
+
+    &_mobile{
+      border-top: 2px solid #fff;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 22px 0;
+      
+    }
     a {
       font-family: "Kino", sans-serif;
       font-weight: 400;
@@ -155,7 +165,12 @@
       }
     }
   }
-
+.mobile{
+  display: none;
+  .mobile {
+    display: none;
+  }
+}
 }
 
 @media screen and (max-width: 1400px) {
@@ -187,6 +202,7 @@
   .footer {
     padding: 60px 30px 20px 30px;
 
+
     &_top {
       flex-direction: column;
 
@@ -206,7 +222,15 @@
   .footer {
     padding: 50px 20px 20px 20px;
 
+    .laptop{
+      display: none;
+    }
 
+.mobile{
+  display: block;
+}
+
+  
     &_top {
       .footer_sections {
         flex-direction: column;

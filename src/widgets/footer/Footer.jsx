@@ -2,7 +2,7 @@ import "./footer.scss"
 import Logo from '../../shared/image/Group 1.png';
 import Akar from '../../shared/image/static.svg'
 import Rectangle from '../../shared/image/Rectangle 986.svg'
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 import { FaInstagram } from "react-icons/fa";
 import { CiFacebook } from "react-icons/ci";
 import { FaYoutube } from "react-icons/fa";
@@ -32,7 +32,7 @@ export const Footer = () => {
       <div className="container">
         <div className="footer_top">
           <div className="footer_top_logo">
-            <img className="footer_top_logo_img" src={Logo} alt="" />
+            <Link to="/" ><img className="footer_top_logo_img" src={Logo} alt="" /></Link>
             <a className="footer_top_logo_adres" href="https://2gis.kg/osh/firm/70000001030596097">Адресc: ПКурманжан датка,272/1</a>
             <p>Телефон: +996 557 01 63 44</p>
             <div className="footer_top_logo_social">
@@ -50,8 +50,6 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-
-
           <div className="footer_sections">
             <div className="footer_section">
               <h3 onClick={toggleAbout} className="footer_section_title">
@@ -90,35 +88,60 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        {/* <div className="footer_bottom">
+        <div className="footer_bottom laptop">
           <p>© 2025 Название библиотеки . Все права защищены.</p>
-          <div className="footer_bottom_grupa">
-
-
-            <a href="https://geeks.kg/geeks-pro">MADE BY GEEKSPRO</a>
-              <div className="footer_views">
-                <img src={Akar} alt="" className="footer_views_akar" />
-                <img src={Rectangle} alt="" />
+          <a href="https://geeks.kg/geeks-pro">MADE BY GEEKSPRO</a>
+          <div className="footer_views">
+            <img src={Akar} alt="" className="footer_views_akar" />
+            <img src={Rectangle} alt="" />
+            <div>
+              <div className="img">
+                <div >
+                  <FaRegEye />
+                  <p>5930</p>
+                </div>
                 <div>
-                  <div className="img">
-                    <div >
-                      <FaRegEye />
-                      <p>5930</p>
-                    </div>
-                    <div>
-                      <IoExit />
-                      <p>3369</p>
-                    </div>
-                    <div>
-                      <IoMdPeople />
-                      <p>2435</p>
-                    </div>
-                  </div>
+                  <IoExit />
+                  <p>3369</p>
+                </div>
+                <div>
+                  <IoMdPeople />
+                  <p>2435</p>
                 </div>
               </div>
+            </div>
           </div>
           <p>Политика конфидециональнности</p>
-        </div> */}
+        </div>
+        <div className="footer_bottom mobile">
+  <div className="footer_views">
+    <img src={Akar} alt="" className="footer_views_akar" />
+    <img src={Rectangle} alt="" />
+    <div>
+      <div className="img">
+        <div>
+          <FaRegEye />
+          <p>5930</p>
+        </div>
+        <div>
+          <IoExit />
+          <p>3369</p>
+        </div>
+        <div>
+          <IoMdPeople />
+          <p>2435</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="footer_views_info">
+    <p>© 2025 Название библиотеки . Все права защищены.</p>
+    <p>Политика конфидециональнности</p>
+    <div className="footer_views_info_geeks">
+      <a href="https://geeks.kg/geeks-pro">MADE BY GEEKSPRO</a>
+    </div>
+  </div>
+</div>
 
       </div>
     </footer>

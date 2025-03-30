@@ -30,13 +30,12 @@ export { ElectronicBanner } from './ElectronicKatalogComponents/electronicBanner
 export { ElectronicPartners } from './ElectronicKatalogComponents/electronicPartners/ElectronicPartners';
 export { ElectronicSearch } from './ElectronicKatalogComponents/electronicSearch/ElectronicSearch';
 
-export { Bibliographical } from "./professionalComponents/bibliographical/Bibliographical";
-export { ContentBlock } from "./professionalComponents/contentBlock/ContentBlock";
-export { Methodological } from "./professionalComponents/methodological/Methodological";
-export { Multimedia } from "./professionalComponents/multimedia/Multimedia";
-export { SearchPage } from "./professionalComponents/search/SearchPage";
-export { SearchBar } from "./professionalComponents/searchBar/SearchBar";
-export { Sidebar } from "./professionalComponents/sidebar/Sidebar";
+export { ProfessionalCategory } from './professionalComponents/professionalCategory/ProfessionalCategory';
+export { ProfessionalSearch } from './professionalComponents/professionalSearch/ProfessionalSearch';
+export { ProfessionalBaner } from './professionalComponents/professionalBaner/ProfessionalBaner';
+// export { SearchPage } from "./professionalComponents/search/SearchPage";
+// export { SearchBar } from "./professionalComponents/searchBar/SearchBar";
+
 
 export { CatalogBanner } from './catalogSection/catalogBanner/CatalogBanner';
 export { CatalogInput } from './catalogSection/catalogInput/CatalogInput';
