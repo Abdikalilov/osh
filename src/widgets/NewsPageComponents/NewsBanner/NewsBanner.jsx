@@ -1,7 +1,8 @@
-import nenoigirl from '../../../shared/img/books.svg'
-import nenoibook from '../../../shared/img/group.svg'
-import laptop from '../../../shared/img/laptop.svg'
-import './newsBanner.scss'
+import nenoigirl from '../../../shared/img/books.svg';
+import nenoibook from '../../../shared/img/group.svg';
+import laptop from '../../../shared/img/laptop.svg';
+import './newsBanner.scss';
+
 export const NewsBanner = () => {
     return (
         <div >
