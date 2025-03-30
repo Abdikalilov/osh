@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { ProfessionalCategory,ProfessionalBaner,ProfessionalSearch } from '../../widgets';
-import './ProfessionalPage.scss';
-
+import { ProfessionalCategory, ProfessionalBaner, ProfessionalSearch } from '../../widgets';
+import './professionalPage.scss';
 export const ProfessionalPage = () => {
-  const [activeTab, setActiveTab] = useState('metod'); 
-
+  const [activeTab, setActiveTab] = useState('metod');
   const categories = [
     {
       title: 'ПОСОБИЕ МАТЕРЯМ',
@@ -27,7 +25,6 @@ export const ProfessionalPage = () => {
         'Роман рассказывает о жизни старого чабана Танабая и его верного коня Гульсары. Это история о дружбе, изменениях в обществе и воспоминаниях о прошлом, наполненная глубокими размышлениями о человеческой судьбе.',
     },
   ];
-
   return (
     <div className="professional-page">
       <ProfessionalBaner activeTab={activeTab} setActiveTab={setActiveTab} />
