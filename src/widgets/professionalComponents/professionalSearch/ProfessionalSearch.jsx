@@ -1,6 +1,6 @@
 import React from 'react';
 import { Search } from 'lucide-react';
-import './ProfessionalSearch.scss';
+import './professionalSearch.scss';
 
 export const ProfessionalSearch = () => {
   return (
