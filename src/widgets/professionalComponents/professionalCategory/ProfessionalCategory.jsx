@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProfessionalCategory.scss';
+import './professionalCategory.scss';
 
 export const ProfessionalCategory = () => {
   return (

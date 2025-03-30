@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProfessionalBaner.scss';
+import './professionalBaner.scss';
 
 export const ProfessionalBaner = ({ activeTab, setActiveTab }) => {
   return (
